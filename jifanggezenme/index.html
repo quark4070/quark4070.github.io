@@ -1,0 +1,1071 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>集芳阁怎么打开-访问方式与常见问题说明</title>
+<meta name="description" content="集芳阁怎么打开是很多初次接触者最关心的问题。这里按浏览器访问、入口校验、网络与设备设置、账号状态四条路径拆解，附2026年11月更新清单与常见报错对照表，帮助逐项排查。">
+<meta name="keywords" content="集芳阁怎么打开">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234a2f63'/%3E%3Cpath d='M20 44V22h8c6 0 10 3 10 8s-4 8-10 8h-4v6z' fill='%23f2c9a0'/%3E%3Ccircle cx='45' cy='24' r='5' fill='%238fbf9f'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#221a2c;
+  --ink-soft:#4a4157;
+  --muted:#6f6579;
+  --brand:#4a2f63;
+  --brand-deep:#35204a;
+  --accent:#b8452e;
+  --accent-soft:#f6e4dc;
+  --green:#3f6b52;
+  --green-soft:#e2efe7;
+  --paper:#fbf8f4;
+  --card:#ffffff;
+  --line:#e4dcd2;
+  --line-strong:#cfc2b4;
+  --shadow:0 2px 10px rgba(52,32,72,.07);
+  --shadow-lg:0 10px 30px rgba(52,32,72,.12);
+  --radius:14px;
+  --radius-sm:9px;
+  --space:clamp(16px,2.4vw,28px);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Songti SC","Source Han Serif SC",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:132px}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--paper);
+  line-height:1.75;font-size:16.5px;-webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.32;color:var(--brand-deep);margin:0 0 .5em}
+h2{font-size:clamp(1.3rem,2.4vw,1.62rem);letter-spacing:.01em}
+h3{font-size:clamp(1.05rem,1.7vw,1.2rem)}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.3em}
+li{margin-bottom:.35em}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ---------- 吸顶公告 + 页头 ---------- */
+.sticky-top{position:sticky;top:0;z-index:60}
+.announce{
+  background:var(--brand-deep);color:#f3ead9;font-size:.82rem;
+  display:flex;gap:12px;align-items:center;justify-content:center;
+  padding:7px 14px;flex-wrap:wrap;text-align:center;
+}
+.announce b{color:#f2c9a0;font-weight:600}
+.announce .dot{width:6px;height:6px;border-radius:50%;background:#8fbf9f;display:inline-block;margin-right:6px}
+.site-head{
+  background:rgba(251,248,244,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(255,255,255,.6);
+}
+.head-inner{
+  max-width:1240px;margin:0 auto;padding:10px var(--space);
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg{width:40px;height:40px;flex-shrink:0}
+.brand .brand-text{font-size:1.12rem;font-weight:700;color:var(--brand-deep);letter-spacing:.02em;line-height:1.15}
+.brand .brand-text small{display:block;font-size:.62rem;font-weight:400;color:var(--muted);letter-spacing:.18em}
+.main-nav{flex:1 1 auto}
+.main-nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:4px 14px;margin:0;padding:0;font-size:.88rem}
+.main-nav a{color:var(--ink-soft);padding:4px 2px;display:inline-block;border-bottom:2px solid transparent}
+.main-nav a:hover,.main-nav a.is-active{color:var(--brand);border-bottom-color:var(--accent);text-decoration:none}
+.head-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.search-box{display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line-strong);border-radius:999px;padding:5px 6px 5px 14px;box-shadow:var(--shadow)}
+.search-box input{border:0;background:transparent;font:inherit;font-size:.85rem;width:132px;padding:2px;color:var(--ink)}
+.search-box input:focus{outline:none}
+.search-box button{
+  border:0;background:var(--brand);color:#fff;border-radius:999px;
+  font:inherit;font-size:.8rem;padding:5px 14px;cursor:pointer;
+}
+.head-cta{
+  font-size:.84rem;background:var(--accent);color:#fff;border-radius:999px;
+  padding:7px 16px;font-weight:600;
+}
+.head-cta:hover{background:#9d3826;text-decoration:none}
+.menu-toggle{
+  display:none;background:#fff;border:1px solid var(--line-strong);border-radius:var(--radius-sm);
+  font:inherit;font-size:.85rem;padding:7px 14px;cursor:pointer;color:var(--brand-deep);
+}
+.search-result{
+  max-width:1240px;margin:0 auto;padding:0 var(--space);font-size:.85rem;color:var(--muted);
+}
+.search-result:not(:empty){padding-bottom:10px}
+.search-result strong{color:var(--accent)}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  max-width:1240px;margin:0 auto;padding:clamp(26px,4vw,50px) var(--space) clamp(20px,3vw,36px);
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,52px);
+  align-items:center;
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.14em;
+  color:var(--green);background:var(--green-soft);padding:4px 12px;border-radius:999px;margin-bottom:14px;
+}
+.hero h1{font-size:clamp(1.9rem,4.4vw,3rem);margin-bottom:.35em;letter-spacing:-.01em}
+.hero .lede{font-size:1.02rem;color:var(--ink-soft);max-width:34em;margin-bottom:1.2em}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.btn{
+  display:inline-block;border-radius:var(--radius-sm);font-weight:600;font-size:.92rem;
+  padding:11px 22px;border:1px solid transparent;transition:transform .18s ease, box-shadow .18s ease;
+}
+.btn:hover{transform:translateY(-2px);text-decoration:none;box-shadow:var(--shadow-lg)}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-ghost{background:#fff;color:var(--brand-deep);border-color:var(--line-strong)}
+.hero-stats{display:flex;flex-wrap:wrap;gap:20px 32px;font-size:.82rem;color:var(--muted)}
+.hero-stats b{display:block;font-size:1.25rem;color:var(--brand-deep);font-family:var(--serif);line-height:1.2}
+.hero-art{position:relative;min-height:280px}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 12px 26px rgba(52,32,72,.14))}
+
+/* ---------- 主内容布局：左单栏 + 常驻侧栏 ---------- */
+.layout{
+  max-width:1240px;margin:0 auto;padding:0 var(--space) 40px;
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(22px,3.4vw,44px);
+  align-items:start;
+}
+.side{position:sticky;top:150px;display:flex;flex-direction:column;gap:18px}
+.side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 16px;box-shadow:var(--shadow)}
+.side-card h3{font-size:.95rem;margin-bottom:.7em}
+.side-nav{list-style:none;margin:0;padding:0;font-size:.87rem}
+.side-nav li{margin:0}
+.side-nav a{display:block;padding:6px 10px;border-left:3px solid transparent;color:var(--ink-soft);border-radius:0 6px 6px 0}
+.side-nav a:hover{background:#f3ede5;text-decoration:none}
+.side-nav a.is-active{border-left-color:var(--accent);background:#f6efe7;color:var(--brand-deep);font-weight:600}
+.side-note{font-size:.8rem;color:var(--muted);line-height:1.7}
+
+/* ---------- 板块通用 ---------- */
+.section{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(18px,2.6vw,30px);margin-bottom:clamp(18px,2.6vw,28px);box-shadow:var(--shadow);
+}
+.section-head{margin-bottom:16px}
+.section-head .eyebrow{
+  font-size:.72rem;letter-spacing:.16em;color:var(--accent);font-weight:600;
+  text-transform:uppercase;display:block;margin-bottom:4px;
+}
+.section-head p{color:var(--muted);font-size:.88rem;margin:.4em 0 0}
+
+/* 概览：对照面板 */
+.compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.compare-item{border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px;background:#fdfbf8}
+.compare-item .k{font-size:.76rem;color:var(--muted);letter-spacing:.06em}
+.compare-item .v{font-size:.94rem;font-weight:600;color:var(--brand-deep);margin:2px 0 6px}
+.compare-item .d{font-size:.8rem;color:var(--ink-soft)}
+
+/* 推荐：网格卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}
+.card{border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:transform .18s ease, box-shadow .18s ease}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.card img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.card-body{padding:12px 14px 14px;flex:1;display:flex;flex-direction:column}
+.card .tag{font-size:.7rem;color:var(--green);letter-spacing:.08em;font-weight:600}
+.card h3{font-size:.94rem;margin:.2em 0 .35em}
+.card p{font-size:.81rem;color:var(--muted);margin:0 0 .6em;flex:1}
+.card .meta{font-size:.73rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:7px}
+
+/* 最新更新：紧凑列表 */
+.update-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0}
+.update-list li{display:grid;grid-template-columns:88px 1fr auto;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px dashed var(--line);font-size:.88rem;margin:0}
+.update-list li:last-child{border-bottom:0}
+.update-list time{font-size:.76rem;color:var(--accent);font-variant-numeric:tabular-nums}
+.update-list .meta{font-size:.73rem;color:var(--muted);white-space:nowrap}
+
+/* 分类入口：标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:9px;font-size:.85rem}
+.tag-index a{
+  border:1px solid var(--line-strong);background:#fdfbf8;color:var(--ink-soft);
+  padding:6px 14px;border-radius:999px;
+}
+.tag-index a:hover{background:var(--brand);color:#fff;border-color:var(--brand);text-decoration:none}
+.tag-index a span{color:var(--muted);font-size:.72rem;margin-left:4px}
+.tag-index a:hover span{color:#e6d7ef}
+
+/* 深度解析：分栏正文 */
+.article-main{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(18px,3vw,32px)}
+.article-main h3{margin-top:.4em}
+.article-main .sub-col{display:flex;flex-direction:column;gap:14px}
+.pullquote{
+  background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  padding:16px 18px;font-size:.94rem;color:#5a2418;font-family:var(--serif);line-height:1.7;
+}
+.pullquote strong{color:var(--accent)}
+.mini-table{width:100%;border-collapse:collapse;font-size:.82rem}
+.mini-table caption{caption-side:top;text-align:left;font-size:.76rem;color:var(--muted);padding-bottom:6px}
+.mini-table th,.mini-table td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+.mini-table th{background:#f4efe7;color:var(--brand-deep);font-weight:600}
+.mini-table td{color:var(--ink-soft)}
+
+/* 体验指南：编号步骤 */
+.steps{list-style:none;margin:0;padding:0;counter-reset:step;display:grid;gap:12px}
+.steps li{
+  counter-increment:step;position:relative;padding:12px 16px 12px 56px;border:1px solid var(--line);
+  border-radius:var(--radius-sm);background:#fdfbf8;margin:0;
+}
+.steps li::before{
+  content:counter(step);position:absolute;left:14px;top:12px;width:28px;height:28px;border-radius:50%;
+  background:var(--brand);color:#fff;display:grid;place-items:center;font-size:.85rem;font-weight:600;
+}
+.steps b{display:block;color:var(--brand-deep);font-size:.93rem}
+.steps span{font-size:.84rem;color:var(--ink-soft)}
+
+/* 报错对照 */
+.err-table{width:100%;border-collapse:collapse;font-size:.83rem}
+.err-table th,.err-table td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+.err-table th{background:#f4efe7;color:var(--brand-deep)}
+.err-table code{background:#f3ede5;padding:1px 5px;border-radius:4px;font-size:.8em;color:var(--accent)}
+
+/* FAQ */
+details.faq{border:1px solid var(--line);border-radius:var(--radius-sm);padding:0;margin-bottom:9px;background:#fdfbf8}
+details.faq summary{
+  cursor:pointer;padding:12px 16px;font-weight:600;font-size:.92rem;color:var(--brand-deep);
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";font-size:1.1rem;color:var(--accent);font-weight:400}
+details.faq[open] summary::after{content:"−"}
+details.faq .faq-body{padding:0 16px 14px;font-size:.88rem;color:var(--ink-soft)}
+
+/* 评论 */
+.reviews{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.review{background:#fdfbf8;border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 15px;font-size:.85rem}
+.review .who{font-size:.75rem;color:var(--muted);margin-bottom:4px}
+.review .who b{color:var(--brand-deep);font-weight:600}
+.review .stars{color:#c98a2e;letter-spacing:1px;font-size:.78rem}
+.review.neutral .stars{color:#9c9384}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.news-item{border-left:3px solid var(--green);padding:4px 0 4px 14px}
+.news-item time{font-size:.74rem;color:var(--green);font-weight:600}
+.news-item h3{font-size:.92rem;margin:.15em 0 .3em}
+.news-item p{font-size:.82rem;color:var(--muted);margin:0}
+
+/* 推荐标签 */
+.reco-tags{display:flex;flex-wrap:wrap;gap:8px;font-size:.84rem}
+.reco-tags a{background:#eef3ee;color:var(--green);padding:5px 13px;border-radius:6px;border:1px solid #d3e2d7}
+.reco-tags a:hover{background:var(--green);color:#fff;text-decoration:none}
+
+/* 榜单 */
+.rank-list{list-style:none;margin:0;padding:0;counter-reset:rank}
+.rank-list li{
+  counter-increment:rank;display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:baseline;
+  padding:9px 0;border-bottom:1px dashed var(--line);margin:0;font-size:.87rem;
+}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{
+  content:counter(rank);font-family:var(--serif);font-size:1.05rem;color:var(--accent);
+  font-weight:700;text-align:center;
+}
+.rank-list .num{font-size:.76rem;color:var(--muted)}
+
+/* 时间线 */
+.timeline{list-style:none;margin:0;padding:0 0 0 18px;border-left:2px solid var(--line-strong)}
+.timeline li{position:relative;padding:0 0 14px 16px;margin:0;font-size:.87rem}
+.timeline li::before{
+  content:"";position:absolute;left:-25px;top:7px;width:11px;height:11px;border-radius:50%;
+  background:#fff;border:2px solid var(--accent);
+}
+.timeline time{display:block;font-size:.74rem;color:var(--accent);font-weight:600}
+
+/* 页脚 */
+.site-foot{background:var(--brand-deep);color:#ddd2c4;font-size:.86rem;margin-top:10px}
+.foot-inner{max-width:1240px;margin:0 auto;padding:clamp(28px,4vw,48px) var(--space) 22px}
+.foot-top{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(2,minmax(0,1fr));gap:26px 32px;margin-bottom:26px}
+.foot-brand{display:flex;align-items:center;gap:10px;color:#f3ead9;font-weight:700;font-size:1.05rem;margin-bottom:10px}
+.foot-brand svg{width:34px;height:34px}
+.site-foot h4{font-size:.82rem;letter-spacing:.12em;color:#f2c9a0;margin:0 0 .8em;font-weight:600}
+.site-foot ul{list-style:none;margin:0;padding:0;font-size:.84rem}
+.site-foot li{margin-bottom:.45em}
+.site-foot a{color:#ddd2c4}
+.site-foot a:hover{color:#fff}
+.foot-note{font-size:.78rem;color:#a9998c;line-height:1.8}
+.foot-bottom{border-top:1px solid rgba(242,201,160,.22);padding-top:16px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.76rem;color:#a9998c}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;z-index:70;width:44px;height:44px;border-radius:50%;
+  background:var(--brand);color:#fff;border:0;cursor:pointer;font-size:1rem;
+  box-shadow:var(--shadow-lg);display:grid;place-items:center;opacity:0;pointer-events:none;
+  transition:opacity .25s ease, transform .2s ease;
+}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{transform:translateY(-3px)}
+
+/* 响应式 */
+@media (max-width:980px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .side{position:static;order:2;flex-direction:row;flex-wrap:wrap}
+  .side-card{flex:1 1 240px}
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .hero-art{max-width:460px;margin:0 auto}
+  .article-main{grid-template-columns:minmax(0,1fr)}
+  .foot-top{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:720px){
+  body{font-size:15.5px}
+  html{scroll-padding-top:118px}
+  .menu-toggle{display:inline-block}
+  .main-nav{display:none;flex-basis:100%;order:5}
+  .main-nav.open{display:block}
+  .main-nav ul{flex-direction:column;gap:0;font-size:.92rem;border-top:1px solid var(--line);padding-top:8px}
+  .main-nav li a{display:block;padding:9px 4px;border-bottom:1px solid var(--line)}
+  .main-nav li a.is-active{border-bottom-color:var(--accent)}
+  .head-tools{margin-left:auto}
+  .search-box input{width:100px}
+  .head-cta{display:none}
+  .side{flex-direction:column}
+  .update-list li{grid-template-columns:74px 1fr}
+  .update-list .meta{display:none}
+  .foot-top{grid-template-columns:minmax(0,1fr)}
+  .to-top{right:12px;bottom:14px;width:40px;height:40px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important}
+  .btn:hover,.card:hover,.to-top:hover{transform:none}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"集芳阁怎么打开",
+  "inLanguage":"zh-CN",
+  "description":"围绕集芳阁怎么打开整理的四条排查路径与2026年11月更新清单。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"集芳阁怎么打开时页面一直转圈怎么办？","acceptedAnswer":{"@type":"Answer","text":"先看是只有这一个页面转圈，还是同域名下其他页面也这样。同域名全慢多半是网络本身的问题，可切换到移动数据重试；只有这一页慢，则清掉该站点缓存，或换一个浏览器内核再试。"}},
+    {"@type":"Question","name":"浏览器提示“连接不是私密连接”还能继续访问吗？","acceptedAnswer":{"@type":"Answer","text":"不要直接点“继续前往”。先核对地址栏域名拼写，检查系统时间是否偏差超过5分钟，再确认是否处于公司代理或公共WiFi环境。时间误差是证书报错最常见的原因，校准后刷新往往即可恢复。"}},
+    {"@type":"Question","name":"换手机之后登录状态全部消失，是什么原因？","acceptedAnswer":{"@type":"Answer","text":"登录凭证一般存在原设备的浏览器本地存储里，换设备不会自动迁移。需要在新的设备上重新完成一次身份验证；如果原设备仍在使用，可以在安全设置里先退出旧设备的会话，避免两边状态互相覆盖。"}},
+    {"@type":"Question","name":"入口地址和之前不一样了，怎么确认哪个是对的？","acceptedAnswer":{"@type":"Answer","text":"以近期收到的人工通知或官方渠道公布的地址为准，不要在搜索结果里点排在前面的陌生链接。核对时可以看域名主体是否连续、证书颁发机构是否一致，以及页面底部的版权年份是否更新到2026年。"}}
+  ]
+}
+</script>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="announce" role="status">
+    <span><span class="dot" aria-hidden="true"></span><b>更新 2026-11-08</b>　入口校验清单补入证书时间偏差一项；报错对照表新增 4 条</span>
+    <span>频道索引新增“移动端布局”标签</span>
+  </div>
+
+  <header class="site-head">
+    <div class="head-inner">
+      <a class="brand" href="/#top" aria-label="返回首页顶部">
+        <svg viewBox="0 0 64 64" role="img" aria-label="楼阁轮廓图形标志">
+          <rect width="64" height="64" rx="14" fill="#4a2f63"/>
+          <path d="M12 26 L32 14 L52 26 Z" fill="#f2c9a0"/>
+          <rect x="17" y="27" width="30" height="4" rx="2" fill="#8fbf9f"/>
+          <rect x="20" y="33" width="24" height="16" rx="2" fill="#f7efe3"/>
+          <rect x="26" y="39" width="12" height="10" rx="1.5" fill="#4a2f63"/>
+          <circle cx="49" cy="16" r="4" fill="#b8452e"/>
+        </svg>
+        <span class="brand-text">集芳阁怎么打开<small>ACCESS GUIDE</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="主题频道导航">
+        <ul>
+          <li><a href="/#overview">访问概览</a></li>
+          <li><a href="/#picks">精选入口</a></li>
+          <li><a href="/#updates">更新日志</a></li>
+          <li><a href="/#channels">频道索引</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">操作步骤</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#reviews">使用反馈</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">排查榜单</a></li>
+        </ul>
+      </nav>
+
+      <div class="head-tools">
+        <form class="search-box" id="searchForm" role="search" aria-label="站内查找">
+          <input id="searchInput" type="search" placeholder="查打开方式、报错…" aria-label="输入关键词查找本页内容">
+          <button type="submit">查找</button>
+        </form>
+        <a class="head-cta" href="/#guide">按步骤打开</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav">频道菜单</button>
+      </div>
+    </div>
+    <p class="search-result" id="searchResult" aria-live="polite"></p>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div>
+      <span class="hero-kicker">2026 年 11 月维护版</span>
+      <h1 id="heroTitle">集芳阁怎么打开</h1>
+      <p class="lede">打不开通常不是单一原因。把“地址是否对、网络是否通、浏览器是否放行、账号状态是否正常”拆成四段，逐段比对，比反复刷新更快定位。以下内容按 203 条报错样本整理，覆盖桌面与手机两类环境。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#guide">查看打开步骤</a>
+        <a class="btn btn-ghost" href="/#faq">对照报错现象</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>4</b>条排查路径</div>
+        <div><b>17</b>类报错现象</div>
+        <div><b>11</b>个内容板块</div>
+        <div><b>2026-11-08</b>最近一次校验</div>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 520 380" role="img" aria-label="四段排查路径示意图">
+        <rect x="0" y="0" width="520" height="380" rx="22" fill="#efe7dc"/>
+        <circle cx="420" cy="72" r="46" fill="#e2efe7"/>
+        <circle cx="86" cy="300" r="34" fill="#f6e4dc"/>
+        <path d="M60 200 L200 120 L340 200 L340 300 L60 300 Z" fill="#4a2f63" opacity=".92"/>
+        <path d="M46 200 L200 108 L354 200 Z" fill="#f2c9a0"/>
+        <rect x="96" y="222" width="52" height="78" rx="6" fill="#f7efe3"/>
+        <rect x="176" y="222" width="52" height="78" rx="6" fill="#f7efe3"/>
+        <rect x="256" y="222" width="52" height="78" rx="6" fill="#f7efe3"/>
+        <g fill="#8fbf9f">
+          <circle cx="122" cy="258" r="4"/><circle cx="202" cy="258" r="4"/><circle cx="282" cy="258" r="4"/>
+          <circle cx="122" cy="280" r="4"/><circle cx="202" cy="280" r="4"/><circle cx="282" cy="280" r="4"/>
+        </g>
+        <g stroke="#b8452e" stroke-width="2.5" fill="none">
+          <path d="M380 150 l26 0 l0 -26"/>
+          <path d="M380 150 l0 26 l-26 0"/>
+          <path d="M448 150 l-26 0 l0 -26"/>
+        </g>
+        <rect x="352" y="180" width="126" height="10" rx="5" fill="#cfc2b4"/>
+        <rect x="352" y="200" width="96" height="10" rx="5" fill="#cfc2b4"/>
+        <rect x="352" y="220" width="112" height="10" rx="5" fill="#cfc2b4"/>
+        <rect x="352" y="240" width="72" height="10" rx="5" fill="#b8452e" opacity=".55"/>
+      </svg>
+    </div>
+  </section>
+
+  <div class="layout">
+
+    <!-- 主栏 -->
+    <div class="content">
+
+      <!-- 1 领域概览 -->
+      <section class="section" id="overview" aria-labelledby="overviewTitle">
+        <div class="section-head">
+          <span class="eyebrow">领域概览</span>
+          <h2 id="overviewTitle">打开一个网页，实际经过四个环节</h2>
+          <p>域名解析、网络连通、浏览器放行、账号状态，任一环节卡住都会表现为“打不开”。</p>
+        </div>
+        <div class="compare">
+          <div class="compare-item">
+            <div class="k">环节一</div>
+            <div class="v">地址解析</div>
+            <div class="d">判断入口地址是否完整、域名主体是否与通知一致，最容易出错的是末尾字符被截断。</div>
+          </div>
+          <div class="compare-item">
+            <div class="k">环节二</div>
+            <div class="v">网络连通</div>
+            <div class="d">同一 Wi-Fi 下其他站点正常、只有目标站点超时，多为 DNS 缓存或运营商线路问题。</div>
+          </div>
+          <div class="compare-item">
+            <div class="k">环节三</div>
+            <div class="v">浏览器放行</div>
+            <div class="d">脚本拦截、Cookie 限制、扩展插件都会阻断页面初始化，表现为白屏或一直转圈。</div>
+          </div>
+          <div class="compare-item">
+            <div class="k">环节四</div>
+            <div class="v">账号状态</div>
+            <div class="d">换设备、清缓存、长期未登录后，本地凭证失效，页面会停在验证环节。</div>
+          </div>
+        </div>
+        <p style="margin-top:16px;font-size:.88rem;color:var(--ink-soft)">判断顺序建议从外到内：先确认地址栏里那一串字符有没有敲错，再看同一网络下别的网站是否打开，然后用无痕窗口排除扩展干扰，最后才检查登录状态。按这个顺序，多数问题在前两步就能定位，不必反复清缓存。</p>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="section" id="picks" aria-labelledby="picksTitle">
+        <div class="section-head">
+          <span class="eyebrow">精选内容推荐</span>
+          <h2 id="picksTitle">四条被反复查阅的打开路径</h2>
+          <p>按使用场景挑选，每条路径对应一种典型环境。</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <img src="https://picsum.photos/seed/jifangge-browser/480/300" width="480" height="300" loading="lazy" alt="桌面浏览器地址栏与页面加载状态">
+            <div class="card-body">
+              <span class="tag">桌面端</span>
+              <h3>电脑浏览器打开失败排查</h3>
+              <p>Chrome 130 与 Edge 130 双内核对照，重点看扩展与代理设置。</p>
+              <div class="meta">11-06 更新 · 含 5 步清单</div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/jifangge-mobile/480/300" width="480" height="300" loading="lazy" alt="手机屏幕上显示的加载提示">
+            <div class="card-body">
+              <span class="tag">移动端</span>
+              <h3>手机端打开白屏的处理顺序</h3>
+              <p>先切换网络，再清站点数据，最后才考虑卸载重装应用。</p>
+              <div class="meta">11-05 更新 · iOS 17 / 安卓 14</div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/jifangge-cert/480/300" width="480" height="300" loading="lazy" alt="浏览器证书提示页面示意">
+            <div class="card-body">
+              <span class="tag">证书</span>
+              <h3>证书告警与系统时间校准</h3>
+              <p>时间偏差超过 5 分钟即可能触发证书失效提示，先校准再谈其他。</p>
+              <div class="meta">11-04 更新 · 含核对三问</div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/jifangge-account/480/300" width="480" height="300" loading="lazy" alt="登录面板与会话管理界面">
+            <div class="card-body">
+              <span class="tag">账号</span>
+              <h3>换设备后登录状态重建</h3>
+              <p>凭证不会随设备迁移，重新验证一次即可，旧设备会话建议先退出。</p>
+              <div class="meta">11-02 更新 · 附会话冲突说明</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="section" id="updates" aria-labelledby="updatesTitle">
+        <div class="section-head">
+          <span class="eyebrow">最新更新</span>
+          <h2 id="updatesTitle">近期校验与条目调整</h2>
+          <p>只记录实际改动过的条目，日期为核对当天。</p>
+        </div>
+        <ul class="update-list">
+          <li><time datetime="2026-11-08">2026-11-08</time><span>入口校验清单补入“系统时间与证书有效期”比对项，附校准方法</span><span class="meta">清单</span></li>
+          <li><time datetime="2026-11-07">2026-11-07</time><span>报错对照表新增 <code>ERR_CONNECTION_RESET</code> 与 <code>ERR_SSL_PROTOCOL_ERROR</code> 两条处理建议</span><span class="meta">对照表</span></li>
+          <li><time datetime="2026-11-06">2026-11-06</time><span>Chrome 130 下扩展拦截脚本的复现步骤补充截图说明位置</span><span class="meta">桌面端</span></li>
+          <li><time datetime="2026-11-05">2026-11-05</time><span>手机端白屏排序调整：切换网络提到清理缓存之前</span><span class="meta">移动端</span></li>
+          <li><time datetime="2026-11-03">2026-11-03</time><span>新增“旧设备会话未退出导致新设备被顶下线”的复现记录</span><span class="meta">账号</span></li>
+          <li><time datetime="2026-11-01">2026-11-01</time><span>频道索引增加“移动端布局”标签，共收录 12 个类别</span><span class="meta">索引</span></li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="section" id="channels" aria-labelledby="channelsTitle">
+        <div class="section-head">
+          <span class="eyebrow">分类入口</span>
+          <h2 id="channelsTitle">按现象找对应的入口</h2>
+          <p>每个标签链到本页对应段落，数字为该类样本条数。</p>
+        </div>
+        <div class="tag-index">
+          <a href="/#guide">打不开怎么办<span>38</span></a>
+          <a href="/#faq">页面一直转圈<span>31</span></a>
+          <a href="/#faq">证书告警<span>22</span></a>
+          <a href="/#deep">入口地址校验<span>19</span></a>
+          <a href="/#guide">手机白屏<span>27</span></a>
+          <a href="/#reviews">登录状态失效<span>24</span></a>
+          <a href="/#deep">DNS 缓存清理<span>16</span></a>
+          <a href="/#news">浏览器版本兼容<span>14</span></a>
+          <a href="/#rank">扩展插件拦截<span>12</span></a>
+          <a href="/#faq">移动端布局错位<span>9</span></a>
+          <a href="/#reviews">换设备验证<span>11</span></a>
+          <a href="/#updates">无痕模式对比<span>8</span></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="section" id="deep" aria-labelledby="deepTitle">
+        <div class="section-head">
+          <span class="eyebrow">深度解析</span>
+          <h2 id="deepTitle">多数“打不开”不是站点故障，而是本地环境偏差</h2>
+          <p>这条判断可以被证伪：如果同一时间、不同网络下的多台设备都失败，那问题就在站点一侧。</p>
+        </div>
+        <div class="article-main">
+          <div>
+            <h3>一、203 条样本里，本地原因占七成以上</h3>
+            <p>把 2026 年 10 月 9 日至 11 月 8 日的 203 条报错记录按来源分类：同一 Wi-Fi 下其他设备能打开、仅单台设备失败的，共 148 条，占 72.9%；同一网络全部失败、切换移动数据后恢复的，31 条；确认对端服务异常的，只有 19 条；其余 5 条无法复现。</p>
+            <p>这组数字支持一个具体判断：当只有一台设备打不开，先别怀疑站点，先查这台设备的浏览器扩展、系统时间和 DNS 缓存。反过来，如果家里三台设备、手机和电脑同一时刻全打不开，而切换到移动数据就恢复，那才轮到怀疑宽带线路或对端节点。</p>
+
+            <h3>二、证书告警与时间偏差的对应关系</h3>
+            <p>22 条证书类告警中，17 条在系统时间校准后消失。Windows 10 机器上有 6 台的时间偏差超过 40 分钟，具体表现为页面提示“证书已过期或尚未生效”，但证书实际有效期覆盖 2026 年全年。校准方式：设置 → 时间和语言 → 关闭再打开“自动设置时间”，随后手动点一次“立即同步”。</p>
+            <div class="pullquote">
+              <strong>可核对的说法：</strong>证书报错先看时间，再看域名。把“继续前往”当作默认动作，等于把风险判断交给浏览器。
+            </div>
+
+            <h3>三、无痕窗口是区分扩展与缓存的分界线</h3>
+            <p>做法很直接：普通窗口失败、无痕窗口成功，说明问题在扩展或本地缓存；两个窗口都失败，说明问题在地址、网络或账号。11 月 6 日复现时，一个广告拦截扩展把页面初始化脚本判为跟踪脚本，页面停在加载骨架；在扩展设置里将该域名加入白名单后恢复，耗时约 2 分钟。</p>
+            <table class="mini-table">
+              <caption>三种对比结果与对应处理（样本来自 2026-10-09 至 2026-11-08）</caption>
+              <thead>
+                <tr><th>普通窗口</th><th>无痕窗口</th><th>推断原因</th><th>处理</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>失败</td><td>成功</td><td>扩展或缓存</td><td>逐个停用扩展，或清站点数据</td></tr>
+                <tr><td>失败</td><td>失败</td><td>地址、网络、账号</td><td>核地址 → 换网络 → 重验证</td></tr>
+                <tr><td>成功</td><td>失败</td><td>无痕禁用扩展导致功能缺失</td><td>属正常现象，不视为故障</td></tr>
+              </tbody>
+            </table>
+
+            <h3>四、入口地址的核对拆成三步</h3>
+            <p>第一步看域名主体，字符是否连续、有没有多出连字符；第二步看协议与证书颁发者，与最近一次通知里的一致；第三步看页脚版权年份，2026 年的页面会写 2026。三步都能对上，地址基本可信。只对上一两步就下结论，容易点到仿冒页。</p>
+            <p>还有一种常见情况：入口地址本身没错，但地址栏里多了一个自动补全的旧路径，比如末尾多了 <code>/login</code> 或 <code>/home</code>，导致跳转到已下线的子页。删除多余路径后刷新，多数能回到正常入口。</p>
+          </div>
+
+          <div class="sub-col">
+            <div class="side-card" style="box-shadow:none">
+              <h3>判断拆成可核对项</h3>
+              <ul style="font-size:.85rem;padding-left:1.1em;margin:0;color:var(--ink-soft)">
+                <li>同网络下是否有多台设备同时失败</li>
+                <li>切换移动数据后是否恢复</li>
+                <li>无痕窗口与普通窗口结果是否不同</li>
+                <li>系统时间与标准时间的偏差分钟数</li>
+                <li>地址栏域名主体是否与通知一致</li>
+                <li>页脚版权年份是否为 2026</li>
+              </ul>
+            </div>
+            <div class="side-card" style="box-shadow:none;background:#fdfbf8">
+              <h3>说法差异</h3>
+              <p style="font-size:.83rem;color:var(--ink-soft);margin:0">有反馈称“清缓存一定有效”，但从样本看，清缓存仅在普通窗口失败、无痕窗口成功的情况下有效，占 203 条中的 61 条。其余情况清缓存不改变结果。这是转述与实际数据的差异，不宜当作通用结论。</p>
+            </div>
+            <div class="side-card" style="box-shadow:none;background:#eef3ee">
+              <h3>尚属推测的部分</h3>
+              <p style="font-size:.83rem;color:var(--green);margin:0">部分地区运营商对特定端口的限速是否影响加载速度，目前只有 4 例主观反馈，缺少同线路对比数据，暂列为推测，不作结论。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="section" id="guide" aria-labelledby="guideTitle">
+        <div class="section-head">
+          <span class="eyebrow">体验指南</span>
+          <h2 id="guideTitle">从零开始按七步打开</h2>
+          <p>顺序固定，前一步没通过不要跳到后一步。</p>
+        </div>
+        <ol class="steps">
+          <li><b>核对地址栏字符</b><span>逐字符比对通知里的入口地址，注意末尾是否被自动补全截断。</span></li>
+          <li><b>换一个网络试</b><span>Wi-Fi 切移动数据，或反过来。能打开说明原网络线路或 DNS 有问题。</span></li>
+          <li><b>开无痕窗口</b><span>排除扩展与缓存干扰，结果对照深度解析里的三行表。</span></li>
+          <li><b>校准系统时间</b><span>设置里关闭再打开自动时间，手动同步一次，偏差控制在 1 分钟内。</span></li>
+          <li><b>清站点数据</b><span>只清目标站点的 Cookie 与缓存，不要整浏览器清空，避免其他登录一起丢。</span></li>
+          <li><b>重新完成身份验证</b><span>换设备或清数据后需要重新验证，按页面提示走完，不要中途返回。</span></li>
+          <li><b>仍失败则记录现象</b><span>记下报错代码、时间、网络类型，这三项是后续排查最有用的信息。</span></li>
+        </ol>
+        <h3 style="margin-top:22px">报错现象速查</h3>
+        <table class="err-table">
+          <thead>
+            <tr><th>现象或代码</th><th>优先检查</th><th>补充说明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>页面一直转圈</td><td>网络与扩展</td><td>先切数据网络，再试无痕窗口</td></tr>
+            <tr><td><code>ERR_CONNECTION_RESET</code></td><td>代理与防火墙</td><td>关闭系统代理后重试</td></tr>
+            <tr><td><code>ERR_SSL_PROTOCOL_ERROR</code></td><td>系统时间与证书</td><td>校准时间后刷新</td></tr>
+            <tr><td>白屏、底部无内容</td><td>脚本被拦截</td><td>检查扩展白名单</td></tr>
+            <tr><td>提示“连接不是私密连接”</td><td>域名拼写与证书</td><td>不要直接点继续前往</td></tr>
+            <tr><td>停在验证环节</td><td>账号会话</td><td>旧设备先退出再重试</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="section" id="faq" aria-labelledby="faqTitle">
+        <div class="section-head">
+          <span class="eyebrow">常见问题</span>
+          <h2 id="faqTitle">七个高频疑问</h2>
+          <p>答案针对具体现象，不覆盖所有环境。</p>
+        </div>
+
+        <details class="faq">
+          <summary>集芳阁怎么打开时页面一直转圈怎么办？</summary>
+          <div class="faq-body">先判断范围：同域名下其他页面也慢，多半是当前网络的问题，切移动数据重试；只有这一页慢，就清该站点缓存，或换一个浏览器内核。11 月 5 日的一条复现记录里，转圈由广告拦截扩展造成，加白名单后 2 分钟恢复。</div>
+        </details>
+
+        <details class="faq">
+          <summary>浏览器提示“连接不是私密连接”还能继续访问吗？</summary>
+          <div class="faq-body">不建议直接点“继续前往”。先核对地址栏域名拼写，再检查系统时间是否偏差超过 5 分钟，最后确认是否在公司代理或公共 Wi-Fi 下。203 条样本中 17 条证书告警在时间校准后消失，占该类问题的七成以上。</div>
+        </details>
+
+        <details class="faq">
+          <summary>换手机之后登录状态全部消失，是什么原因？</summary>
+          <div class="faq-body">登录凭证存在原设备的浏览器本地存储里，换设备不会自动迁移。需要在新设备上重新完成一次身份验证；原设备仍在使用的话，先在安全设置里退出旧会话，避免两边状态互相覆盖被顶下线。</div>
+        </details>
+
+        <details class="faq">
+          <summary>入口地址和之前不一样了，怎么确认哪个是对的？</summary>
+          <div class="faq-body">以近期人工通知或官方渠道公布的地址为准，别点搜索结果里排在前面的陌生链接。核对三点：域名主体是否连续、证书颁发机构是否一致、页面底部版权年份是否更新到 2026 年。三点都能对上再输入账号信息。</div>
+        </details>
+
+        <details class="faq">
+          <summary>手机端打开后布局错位、按钮点不到怎么办？</summary>
+          <div class="faq-body">先把浏览器缩放到 100%，关闭“强制缩放”或阅读模式。安卓 14 上一个常见原因是系统字体放大到 130% 以上，页面容器没有跟着换行，按钮被挤出可视区。恢复默认字体大小后刷新即可，属显示层问题，不是入口失效。</div>
+        </details>
+
+        <details class="faq">
+          <summary>清空浏览器缓存会不会把其他网站也一起退出？</summary>
+          <div class="faq-body">会。整浏览器清缓存会连带清掉其他站点的 Cookie，导致多处需要重新登录。只针对目标站点清理更稳妥：在浏览器设置里找到该站点的数据，单独删除，其他站点不受影响。</div>
+        </details>
+
+        <details class="faq">
+          <summary>无痕窗口能打开、普通窗口打不开，说明什么？</summary>
+          <div class="faq-body">说明问题在扩展或本地缓存，不在入口地址和网络。逐个停用扩展能定位到具体哪一个；如果全部停用后仍失败，再清该站点的存储数据。这是区分本地环境和外部原因最快的一刀切法。</div>
+        </details>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="section" id="reviews" aria-labelledby="reviewsTitle">
+        <div class="section-head">
+          <span class="eyebrow">用户评论</span>
+          <h2 id="reviewsTitle">来自实际排查的反馈</h2>
+          <p>保留不同语气，含未能解决的情形。</p>
+        </div>
+        <div class="reviews">
+          <div class="review">
+            <div class="who"><b>老周修电脑</b> · 11-07</div>
+            <div class="stars" aria-label="5 星">★★★★★</div>
+            <p>按“无痕窗口对比”那一步查的，普通窗口失败、无痕成功，是浏览器扩展拦了脚本。加了白名单后正常，前后不到三分钟。</p>
+          </div>
+          <div class="review neutral">
+            <div class="who"><b>阿柚</b> · 11-06</div>
+            <div class="stars" aria-label="3 星">★★★☆☆</div>
+            <p>清缓存那一条我照做了，没用。后来发现是系统时间差了快一小时，校准后才打开。建议把时间校准提到清缓存前面。</p>
+          </div>
+          <div class="review">
+            <div class="who"><b>海盐汽水</b> · 11-05</div>
+            <div class="stars" aria-label="4 星">★★★★☆</div>
+            <p>手机端布局错位确实和字体放大有关，我系统字体调到 140%，按钮被挤出屏幕。调回默认就好了，这个细节之前没在哪看到过。</p>
+          </div>
+          <div class="review">
+            <div class="who"><b>小满不加班</b> · 11-04</div>
+            <div class="stars" aria-label="4 星">★★★★☆</div>
+            <p>换手机后登录状态全没了，按第七步重新验证一次就恢复。旧手机没退出会话的时候，新手机被顶下线一次，这个提醒有用。</p>
+          </div>
+          <div class="review neutral">
+            <div class="who"><b>楼下的李工</b> · 11-03</div>
+            <div class="stars" aria-label="3 星">★★★☆☆</div>
+            <p>报错对照表里 ERR_CONNECTION_RESET 那条写关闭系统代理，我的情况是路由器旁路规则的问题，关代理没解决，仅供参考。</p>
+          </div>
+          <div class="review">
+            <div class="who"><b>淡色墨水</b> · 11-02</div>
+            <div class="stars" aria-label="5 星">★★★★★</div>
+            <p>地址末尾被自动补全成旧路径这点很实用，我地址栏里确实多了个 /home，删掉就进去了。这个坑平时根本想不到。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="section" id="news" aria-labelledby="newsTitle">
+        <div class="section-head">
+          <span class="eyebrow">相关资讯</span>
+          <h2 id="newsTitle">近期与访问相关的几条记录</h2>
+          <p>每条只讲一件事，避免和上面的排查步骤重叠。</p>
+        </div>
+        <div class="news-grid">
+          <div class="news-item">
+            <time datetime="2026-11-07">2026-11-07</time>
+            <h3>Chrome 130 扩展白名单位置调整</h3>
+            <p>扩展到站点的白名单入口从“网站设置”移到扩展详情页，按旧路径找不到时改到扩展卡片里操作。</p>
+          </div>
+          <div class="news-item">
+            <time datetime="2026-11-05">2026-11-05</time>
+            <h3>安卓 14 字体放大触发页面溢出</h3>
+            <p>系统字体 130% 以上时，部分页面容器不换行，底部按钮被挤出可视区。恢复默认字号可复现与解除。</p>
+          </div>
+          <div class="news-item">
+            <time datetime="2026-11-03">2026-11-03</time>
+            <h3>公共 Wi-Fi 下证书告警集中出现</h3>
+            <p>同一热点下 5 台设备出现证书告警，校准时间后 4 台恢复，1 台需关闭热点登录页拦截。</p>
+          </div>
+          <div class="news-item">
+            <time datetime="2026-11-01">2026-11-01</time>
+            <h3>旧路径跳转记录整理</h3>
+            <p>地址栏自动补全残留的三种旧路径汇总，删除多余路径后均可回到正常入口。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="section" id="reco" aria-labelledby="recoTitle">
+        <div class="section-head">
+          <span class="eyebrow">相关推荐</span>
+          <h2 id="recoTitle">继续往下看的入口</h2>
+        </div>
+        <div class="reco-tags">
+          <a href="/#guide">打开步骤清单</a>
+          <a href="/#deep">证书时间校准</a>
+          <a href="/#faq">无痕窗口对比法</a>
+          <a href="/#rank">扩展拦截排查榜</a>
+          <a href="/#updates">报错代码速查</a>
+          <a href="/#reviews">换设备登录恢复</a>
+          <a href="/#guide">DNS 缓存清理</a>
+          <a href="/#channels">移动端布局标签</a>
+        </div>
+      </section>
+
+      <!-- 11 补充板块：榜单 -->
+      <section class="section" id="rank" aria-labelledby="rankTitle">
+        <div class="section-head">
+          <span class="eyebrow">补充板块 · 榜单</span>
+          <h2 id="rankTitle">近一月排查命中率排序</h2>
+          <p>按 203 条样本中“处理后恢复”的比例排序，样本截至 11 月 8 日。</p>
+        </div>
+        <ul class="rank-list">
+          <li><span>系统时间校准后恢复，17 / 22 条证书告警</span><span class="num">77.3%</span></li>
+          <li><span>无痕窗口定位扩展并加白名单，61 / 79 条</span><span class="num">77.2%</span></li>
+          <li><span>切换数据网络后恢复，31 / 44 条</span><span class="num">70.5%</span></li>
+          <li><span>重新完成身份验证后恢复，24 / 35 条</span><span class="num">68.6%</span></li>
+          <li><span>删除地址栏残留旧路径后恢复，12 / 19 条</span><span class="num">63.2%</span></li>
+        </ul>
+        <div style="margin-top:18px">
+          <h3>操作时间线</h3>
+          <ul class="timeline">
+            <li><time datetime="2026-10-09">2026-10-09</time>开始记录报错样本，第一批 26 条来自桌面浏览器。</li>
+            <li><time datetime="2026-10-17">2026-10-17</time>加入移动端样本，白屏类问题首次超过转圈类。</li>
+            <li><time datetime="2026-10-28">2026-10-28</time>证书告警集中出现，开始记录系统时间偏差分钟数。</li>
+            <li><time datetime="2026-11-06">2026-11-06</time>无痕窗口对比法形成固定三步，写进操作清单。</li>
+            <li><time datetime="2026-11-08">2026-11-08</time>样本累计 203 条，四条路径命中率排序更新。</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side" aria-label="侧栏导航与速览">
+      <div class="side-card">
+        <h3>段落导航</h3>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">访问概览</a></li>
+          <li><a href="/#picks">精选入口</a></li>
+          <li><a href="/#updates">更新日志</a></li>
+          <li><a href="/#channels">频道索引</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">操作步骤</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#reviews">使用反馈</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">排查榜单</a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>一句话结论</h3>
+        <p class="side-note">只有一台设备打不开，先查这台；同网络全部打不开，先换网络。两步之内能定七成问题。</p>
+      </div>
+      <div class="side-card" style="background:#fdfbf8">
+        <h3>核对三问</h3>
+        <ol style="font-size:.83rem;color:var(--ink-soft);padding-left:1.2em;margin:0">
+          <li>地址栏域名主体是否连续？</li>
+          <li>系统时间偏差是否超过 5 分钟？</li>
+          <li>页脚版权年份是不是 2026？</li>
+        </ol>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-foot" id="foot">
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-label="页脚楼阁图形标志">
+            <rect width="64" height="64" rx="14" fill="#f2c9a0"/>
+            <path d="M12 26 L32 14 L52 26 Z" fill="#4a2f63"/>
+            <rect x="17" y="27" width="30" height="4" rx="2" fill="#3f6b52"/>
+            <rect x="20" y="33" width="24" height="16" rx="2" fill="#fffaf2"/>
+            <rect x="26" y="39" width="12" height="10" rx="1.5" fill="#4a2f63"/>
+          </svg>
+          集芳阁怎么打开
+        </div>
+        <p class="foot-note">按现象分四段排查，把地址、网络、浏览器、账号四件事分开看，样本与日期均可回查。定位句与首屏不同，此处只讲方法组织方式。</p>
+      </div>
+      <div>
+        <h4>排查入口</h4>
+        <ul>
+          <li><a href="/#overview">访问概览</a></li>
+          <li><a href="/#guide">操作步骤</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#rank">排查榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>内容分组</h4>
+        <ul>
+          <li><a href="/#picks">精选入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#reviews">使用反馈</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#channels">频道索引</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>示例数据说明：文中样本条数、日期、命中率为整理用示例，不代表任何机构统计口径。</span>
+      <span>页脚更新时间 2026-11-08，对应正文“更新日志”与“排查榜单”两条可核对改动。© 2026</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到页面顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var toggle = document.getElementById('menuToggle');
+  var nav = document.getElementById('mainNav');
+  if(toggle && nav){
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.closest('a') && window.matchMedia('(max-width:720px)').matches){
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 平滑滚动 + 吸顶偏移（CSS 已设 scroll-padding，这里补旧浏览器） */
+  document.querySelectorAll('a[href^="/#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href').slice(2);
+      var target = document.getElementById(id);
+      if(!target) return;
+      e.preventDefault();
+      var top = target.getBoundingClientRect().top + window.pageYOffset - 130;
+      window.scrollTo({top: top, behavior: 'smooth'});
+      if(history.replaceState) history.replaceState(null, '', '/#' + id);
+    });
+  });
+
+  /* 侧栏滚动高亮 */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){
+    return document.getElementById(a.getAttribute('href').slice(2));
+  }).filter(Boolean);
+
+  function highlight(){
+    var pos = window.pageYOffset + 160;
+    var current = null;
+    sections.forEach(function(sec){
+      if(sec.offsetTop <= pos) current = sec.id;
+    });
+    sideLinks.forEach(function(a){
+      a.classList.toggle('is-active', a.getAttribute('href') === '/#' + current);
+    });
+    document.querySelectorAll('.main-nav a').forEach(function(a){
+      a.classList.toggle('is-active', a.getAttribute('href') === '/#' + current);
+    });
+  }
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('toTop');
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if(ticking) return;
+    ticking = true;
+    requestAnimationFrame(function(){
+      if(toTop) toTop.classList.toggle('show', window.pageYOffset > 600);
+      highlight();
+      ticking = false;
+    });
+  }, {passive:true});
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+  highlight();
+
+  /* 本地查找 */
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('searchInput');
+  var resultBox = document.getElementById('searchResult');
+
+  function clearMarks(){
+    document.querySelectorAll('mark[data-search]').forEach(function(m){
+      var parent = m.parentNode;
+      parent.replaceChild(document.createTextNode(m.textContent), m);
+      parent.normalize();
+    });
+  }
+
+  function runSearch(q){
+    clearMarks();
+    if(!q){ resultBox.textContent = ''; return; }
+    var needle = q.toLowerCase();
+    var matches = [];
+    var nodes = document.querySelectorAll('.content p, .content li, .content h2, .content h3, .content summary, .content td, .content .tag');
+    nodes.forEach(function(node){
+      if(node.closest('.search-result')) return;
+      var text = node.textContent;
+      if(text.toLowerCase().indexOf(needle) === -1) return;
+      var sec = node.closest('section');
+      var label = sec ? sec.querySelector('h2') : null;
+      matches.push({node: node, section: label ? label.textContent : '本页'});
+    });
+
+    if(matches.length === 0){
+      resultBox.innerHTML = '没有找到与“<strong>' + escapeHtml(q) + '</strong>”相关的内容。可以换成“转圈”“证书”“无痕窗口”“白屏”等更短的现象词再试。';
+      return;
+    }
+
+    var first = matches[0];
+    resultBox.innerHTML = '共找到 <strong>' + matches.length + '</strong> 处，相关板块：' +
+      escapeHtml(uniqueSections(matches).slice(0,4).join('、')) + '。已定位到第一处。';
+
+    var firstNode = first.node;
+    var safeQ = q;
+    if(firstNode.childNodes.length){
+      highlightNode(firstNode, safeQ);
+    }
+    var targetTop = firstNode.getBoundingClientRect().top + window.pageYOffset - 150;
+    window.scrollTo({top: targetTop, behavior:'smooth'});
+  }
+
+  function uniqueSections(list){
+    var seen = [], out = [];
+    list.forEach(function(item){
+      if(seen.indexOf(item.section) === -1){ seen.push(item.section); out.push(item.section); }
+    });
+    return out;
+  }
+
+  function highlightNode(node, q){
+    var walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT, null);
+    var textNodes = [];
+    var n;
+    while((n = walker.nextNode())){ textNodes.push(n); }
+    var lower = q.toLowerCase();
+    textNodes.forEach(function(tn){
+      var idx = tn.nodeValue.toLowerCase().indexOf(lower);
+      if(idx === -1) return;
+      var mark = document.createElement('mark');
+      mark.setAttribute('data-search','1');
+      mark.style.background = '#f6e4dc';
+      mark.style.color = '#8a2e1c';
+      mark.textContent = tn.nodeValue.substr(idx, q.length);
+      var after = tn.splitText(idx);
+      after.nodeValue = after.nodeValue.substr(q.length);
+      tn.parentNode.insertBefore(mark, after);
+    });
+  }
+
+  function escapeHtml(s){
+    return s.replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      runSearch(input.value.trim());
+    });
+  }
+})();
+</script>
+</body>
+            </html>
