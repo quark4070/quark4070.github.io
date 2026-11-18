@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>海角社区 姐姐离婚-家庭变故事件讨论</title>
+<meta name="description" content="海角社区 姐姐离婚专题，聚合家庭变故事件里的真实讨论。梳理离婚财产分割、子女抚养、姐弟关系重建、法律咨询与情绪互助等内容，提供可核对的条目与体验指南。">
+<meta name="keywords" content="海角社区 姐姐离婚">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f4d5c'/%3E%3Cpath d='M14 44c8-14 14-20 20-20s10 6 16 20' fill='none' stroke='%23f2b880' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='24' r='5' fill='%23f2b880'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1d2b31;
+  --ink-soft:#41565f;
+  --muted:#6b7f88;
+  --paper:#f7f4ee;
+  --card:#ffffff;
+  --line:#dcd6ca;
+  --line-strong:#b9b2a3;
+  --brand:#1f4d5c;
+  --brand-deep:#153843;
+  --accent:#c96f3b;
+  --accent-soft:#f6e2d3;
+  --sage:#5c7d6e;
+  --sage-soft:#e2ece5;
+  --warn:#8a5a1c;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 2px 2px rgba(29,43,49,.04),0 8px 22px rgba(29,43,49,.07);
+  --shadow-sm:0 1px 2px rgba(29,43,49,.06);
+  --fs-body:16px;
+  --lh:1.78;
+  --sp-1:6px;--sp-2:12px;--sp-3:18px;--sp-4:26px;--sp-5:38px;--sp-6:54px;
+  --sticky-ann:36px;
+  --sticky-head:64px;
+  --sticky-total:100px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--sticky-total) + 12px);-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  font-size:var(--fs-body);line-height:var(--lh);
+}
+img{max-width:100%;display:block}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700;letter-spacing:.01em}
+p{margin:0 0 .85em}
+ul,ol{margin:0 0 .85em;padding-left:1.25em}
+li{margin-bottom:.35em}
+.skip{position:absolute;left:-9999px;top:0;background:var(--brand);color:#fff;padding:10px 16px;z-index:200}
+.skip:focus{left:8px;top:8px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+
+/* 吸顶公告 */
+.annbar{
+  position:sticky;top:0;z-index:60;height:var(--sticky-ann);
+  background:var(--brand-deep);color:#e8f1f3;font-size:13px;
+  display:flex;align-items:center;
+}
+.annbar .wrap{display:flex;gap:14px;align-items:center;flex-wrap:nowrap;overflow:hidden}
+.annbar .badge{flex:none;background:var(--accent);color:#fff;border-radius:4px;padding:1px 7px;font-size:12px;font-weight:700}
+.annbar p{margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.annbar a{color:#f2b880;flex:none}
+
+/* 页头 */
+.sitehead{
+  position:sticky;top:var(--sticky-ann);z-index:55;
+  background:rgba(247,244,238,.96);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.headrow{display:flex;align-items:center;gap:20px;min-height:var(--sticky-head);padding-block:8px}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand .bname{font-size:19px;font-weight:800;color:var(--brand-deep);letter-spacing:.02em}
+.nav{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+.nav a{
+  padding:7px 11px;border-radius:999px;font-size:14px;color:var(--ink-soft);
+  text-decoration:none;white-space:nowrap;
+}
+.nav a:hover,.nav a:focus-visible{background:var(--sage-soft);color:var(--brand-deep);text-decoration:none}
+.headtools{display:flex;align-items:center;gap:10px;flex:none}
+.search{position:relative;display:flex;align-items:center}
+.search input{
+  width:190px;padding:8px 12px;border:1px solid var(--line-strong);border-radius:999px;
+  background:#fff;font-size:14px;font-family:inherit;color:var(--ink);
+}
+.search input:focus{outline:2px solid var(--brand);outline-offset:1px}
+.search .sresult{
+  position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-sm);box-shadow:var(--shadow);padding:8px;font-size:13px;
+  max-height:260px;overflow:auto;display:none;z-index:70;
+}
+.search .sresult.open{display:block}
+.search .sresult a{display:block;padding:5px 6px;border-radius:5px;color:var(--ink-soft)}
+.search .sresult a:hover{background:var(--paper);text-decoration:none}
+.search .sresult .none{color:var(--muted);padding:6px}
+.btn{
+  display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:999px;
+  background:var(--brand);color:#fff;font-size:14px;font-weight:600;border:1px solid var(--brand);
+  cursor:pointer;font-family:inherit;
+}
+.btn:hover{background:var(--brand-deep);text-decoration:none;color:#fff}
+.btn.ghost{background:transparent;color:var(--brand);border-color:var(--line-strong)}
+.btn.ghost:hover{background:var(--sage-soft);color:var(--brand-deep)}
+.menubtn{display:none;background:transparent;border:1px solid var(--line-strong);border-radius:10px;padding:7px 9px;cursor:pointer;color:var(--brand-deep)}
+.menubtn:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.menubtn svg{display:block;width:20px;height:20px}
+
+/* 首屏 */
+.hero{
+  background:
+    radial-gradient(900px 320px at 88% -10%,rgba(201,111,59,.16),transparent 62%),
+    radial-gradient(700px 300px at 6% 110%,rgba(92,125,110,.18),transparent 60%),
+    var(--paper);
+  border-bottom:1px solid var(--line);
+  padding:var(--sp-6) 0 var(--sp-5);
+  overflow:hidden;
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,4vw,56px);align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--brand);background:var(--sage-soft);border:1px solid #cadcd1;border-radius:999px;padding:3px 12px;font-weight:600}
+.kicker i{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block}
+.hero h1{font-size:clamp(30px,4.6vw,46px);letter-spacing:.02em;color:var(--brand-deep);margin:16px 0 14px}
+.hero .lede{font-size:17px;color:var(--ink-soft);max-width:36em;margin-bottom:var(--sp-4)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:var(--sp-4)}
+.stats{display:flex;flex-wrap:wrap;gap:26px;border-top:1px dashed var(--line-strong);padding-top:var(--sp-3)}
+.stat b{display:block;font-size:24px;color:var(--brand);font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--muted)}
+.hero-art{position:relative;min-height:300px}
+.hero-art svg{width:100%;height:auto;display:block}
+.artnote{
+  position:absolute;right:6px;bottom:2px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-sm);box-shadow:var(--shadow-sm);font-size:12.5px;color:var(--ink-soft);
+  padding:7px 11px;
+}
+
+/* 主内容布局 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 306px;gap:clamp(22px,3vw,38px);padding-block:var(--sp-5)}
+.maincol{min-width:0}
+.sidecol{min-width:0}
+
+.sec{margin-bottom:var(--sp-6)}
+.sechead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:var(--sp-3);border-bottom:2px solid var(--line-strong);padding-bottom:10px}
+.sechead h2{font-size:23px;color:var(--brand-deep)}
+.sechead .sub{font-size:13.5px;color:var(--muted)}
+.sechead .more{margin-left:auto;font-size:13.5px}
+
+/* 卡片 */
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-3)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3)}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:var(--sp-3);box-shadow:var(--shadow-sm);display:flex;flex-direction:column;
+  transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--line-strong)}
+.card h3{font-size:16.5px;margin-bottom:7px;color:var(--ink)}
+.card p{font-size:14.5px;color:var(--ink-soft);margin-bottom:.5em}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
+.tag{display:inline-block;font-size:12px;background:var(--accent-soft);color:#8d4a22;border-radius:999px;padding:1px 9px;margin-right:5px;margin-bottom:3px}
+.tag.sage{background:var(--sage-soft);color:#3c5d4d}
+.tag.line{background:#fff;border:1px solid var(--line-strong);color:var(--ink-soft)}
+.thumb{border-radius:var(--radius-sm);overflow:hidden;border:1px solid var(--line);margin-bottom:10px;aspect-ratio:16/10;background:#e9e4da}
+.thumb img{width:100%;height:100%;object-fit:cover}
+
+/* 紧凑列表 */
+.clist{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.clist li{list-style:none;padding:13px var(--sp-3);border-bottom:1px solid var(--line);margin:0;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:baseline}
+.clist li:last-child{border-bottom:0}
+.clist{list-style:none;padding:0;margin:0}
+.clist .num{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:52px}
+.clist .t{font-size:15px;color:var(--ink)}
+.clist .t small{display:block;color:var(--muted);font-size:13px;margin-top:3px}
+.clist .d{font-size:12.5px;color:var(--muted);white-space:nowrap}
+
+/* 分类索引 */
+.indexgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.idx{
+  display:flex;flex-direction:column;gap:2px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius-sm);padding:11px 13px;transition:border-color .15s,transform .15s;
+}
+.idx:hover{border-color:var(--brand);text-decoration:none;transform:translateY(-2px)}
+.idx b{font-size:14.5px;color:var(--brand-deep)}
+.idx span{font-size:12.5px;color:var(--muted)}
+
+/* 深度解析 */
+.deep{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(20px,3vw,32px);box-shadow:var(--shadow-sm)}
+.deep h2{font-size:25px;color:var(--brand-deep);margin-bottom:6px}
+.deep .byline{font-size:13px;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:var(--sp-3)}
+.deep h3{font-size:18px;color:var(--brand);margin:var(--sp-4) 0 8px}
+.deep p{font-size:15.5px;color:var(--ink-soft)}
+.deep strong{color:var(--ink)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;margin:14px 0 18px;font-size:14.5px}
+.cmp>div{padding:12px 14px}
+.cmp .h{background:var(--paper);font-weight:700;font-size:13.5px;color:var(--brand-deep);border-bottom:1px solid var(--line)}
+.cmp .l{border-right:1px solid var(--line)}
+.cmp .r{background:#fcfaf6}
+.cmp ul{margin:0;padding-left:1.1em;font-size:14px;color:var(--ink-soft)}
+blockquote{
+  margin:16px 0;padding:14px 18px;border-left:4px solid var(--accent);
+  background:#fdf6f0;border-radius:0 var(--radius-sm) var(--radius-sm) 0;color:var(--ink-soft);font-size:15px;
+}
+blockquote cite{display:block;margin-top:8px;font-size:12.5px;color:var(--muted);font-style:normal}
+.verdict{background:var(--sage-soft);border:1px solid #cadcd1;border-radius:var(--radius-sm);padding:14px 16px;font-size:15px;color:#2f4b3e;margin:18px 0 0}
+.timeline{list-style:none;padding:0;margin:14px 0;border-left:2px solid var(--line-strong)}
+.timeline li{position:relative;padding:0 0 16px 20px;margin:0}
+.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2.5px solid var(--accent)}
+.timeline b{display:block;font-size:13px;color:var(--brand);font-variant-numeric:tabular-nums}
+.timeline span{font-size:14.5px;color:var(--ink-soft)}
+
+/* 步骤 */
+.steps{counter-reset:st;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{
+  counter-increment:st;position:relative;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:14px 16px 14px 56px;font-size:14.5px;color:var(--ink-soft);
+}
+.steps li::before{
+  content:counter(st);position:absolute;left:14px;top:13px;width:28px;height:28px;border-radius:50%;
+  background:var(--brand);color:#fff;display:grid;place-items:center;font-size:14px;font-weight:700;
+}
+.steps b{color:var(--ink)}
+
+/* FAQ */
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:9px}
+.faq summary{
+  cursor:pointer;padding:13px 44px 13px 16px;font-size:15px;font-weight:600;color:var(--brand-deep);
+  list-style:none;position:relative;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:16px;top:11px;font-size:19px;color:var(--accent);font-weight:400}
+.faq details[open] summary::after{content:"–"}
+.faq summary:focus-visible{outline:2px solid var(--brand);outline-offset:-2px;border-radius:var(--radius-sm)}
+.faq .ans{padding:0 16px 14px;font-size:14.5px;color:var(--ink-soft)}
+
+/* 评论 */
+.cmts{display:grid;gap:12px}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:13px 16px}
+.cmt .u{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--muted);margin-bottom:6px}
+.cmt .av{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;background:var(--brand);flex:none}
+.cmt .av.b{background:var(--accent)}
+.cmt .av.c{background:var(--sage)}
+.cmt p{font-size:14.5px;color:var(--ink-soft);margin:0}
+.cmt .ref{color:var(--brand);text-decoration:underline;text-decoration-style:dotted}
+
+/* 侧栏 */
+.sidecard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-3);margin-bottom:var(--sp-3);box-shadow:var(--shadow-sm)}
+.sidecard h2{font-size:16px;color:var(--brand-deep);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.sidecard h2::before{content:"";width:4px;height:15px;border-radius:2px;background:var(--accent)}
+.sidemenu{list-style:none;padding:0;margin:0;position:relative}
+.sidemenu a{display:block;padding:7px 10px;border-radius:6px;font-size:14px;color:var(--ink-soft);border-left:3px solid transparent}
+.sidemenu a:hover{background:var(--paper);text-decoration:none}
+.sidemenu a.active{border-left-color:var(--accent);background:var(--accent-soft);color:#8d4a22;font-weight:600}
+.sidecard p{font-size:14px;color:var(--ink-soft)}
+.mini li{margin-bottom:8px;font-size:14px}
+.mini a{color:var(--ink-soft)}
+.mini a:hover{color:var(--brand)}
+.side-fact{font-size:13.5px;color:var(--muted);border-top:1px dashed var(--line-strong);margin-top:10px;padding-top:10px}
+
+/* 标签索引 */
+.tagcloud{display:flex;flex-wrap:wrap;gap:8px}
+.tagcloud a{
+  font-size:13px;border:1px solid var(--line-strong);border-radius:999px;padding:4px 12px;
+  background:#fff;color:var(--ink-soft);
+}
+.tagcloud a:hover{border-color:var(--accent);color:#8d4a22;text-decoration:none}
+
+/* 页尾 */
+.sitefoot{background:var(--brand-deep);color:#cfdee1;padding:var(--sp-6) 0 var(--sp-4);font-size:14px}
+.footgrid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:var(--sp-4)}
+.sitefoot h2{font-size:15px;color:#f0f6f6;margin-bottom:12px;letter-spacing:.03em}
+.sitefoot a{color:#cfdee1}
+.sitefoot a:hover{color:#f2b880}
+.sitefoot ul{list-style:none;padding:0;margin:0}
+.sitefoot li{margin-bottom:8px;font-size:13.5px}
+.footbrand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.footbrand svg{width:34px;height:34px}
+.footbrand b{font-size:18px;color:#fff}
+.footpitch{color:#a8c2c7;font-size:14px;max-width:26em}
+.footnote{border-top:1px solid #2e5965;margin-top:var(--sp-4);padding-top:var(--sp-3);display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between;font-size:12.5px;color:#92aeb4}
+
+/* 回到顶部 */
+#totop{
+  position:fixed;right:18px;bottom:18px;z-index:80;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line-strong);background:#fff;color:var(--brand);cursor:pointer;
+  box-shadow:var(--shadow);display:none;place-items:center;font-size:18px;
+}
+#totop.show{display:grid}
+#totop:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+
+/* 响应式 */
+@media (max-width:1024px){
+  .layout{grid-template-columns:1fr}
+  .sidecol{order:2}
+  .maincol{order:1}
+  .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .indexgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{max-width:520px}
+}
+@media (max-width:860px){
+  .nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:var(--paper);
+    border-bottom:1px solid var(--line);padding:10px var(--sp-2);box-shadow:var(--shadow);
+    flex-direction:column;flex-wrap:nowrap;
+  }
+  .nav.open{display:flex}
+  .nav a{padding:10px 12px}
+  .headrow{position:relative;justify-content:space-between}
+  .menubtn{display:inline-flex}
+  .search input{width:132px}
+  .nav{flex-basis:100%}
+  .sitehead .headrow{flex-wrap:wrap}
+}
+@media (max-width:720px){
+  .grid3,.grid2{grid-template-columns:1fr}
+  .indexgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footgrid{grid-template-columns:1fr 1fr}
+  .cmp{grid-template-columns:1fr}
+  .cmp .l{border-right:0;border-bottom:1px solid var(--line)}
+  .stats{gap:18px}
+  .clist li{grid-template-columns:auto minmax(0,1fr)}
+  .clist .d{grid-column:2;justify-self:start}
+}
+@media (max-width:400px){
+  .wrap{width:calc(100% - 28px)}
+  .search{display:none}
+  .indexgrid{grid-template-columns:1fr}
+  .footgrid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .card:hover,.idx:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<!-- 公告条 -->
+<div class="annbar" role="note" aria-label="站点更新公告">
+  <div class="wrap">
+    <span class="badge">更新</span>
+    <p><strong>海角社区</strong> 2026-11-07 新收录「离婚后姐弟如何相处」讨论 47 条，财产分割专题补入 3 份调解记录摘要。</p>
+    <a href="#latest">查看更新</a>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="sitehead">
+  <div class="wrap headrow">
+    <a class="brand" href="/#top" aria-label="海角社区 首页">
+      <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#1f4d5c"/>
+        <path d="M13 45c8-15 14-22 20-22s10 7 18 22" fill="none" stroke="#f2b880" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="32" cy="23" r="5.5" fill="#f2b880"/>
+        <path d="M10 51h44" stroke="#7fa6ae" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <span class="bname">海角社区</span>
+    </a>
+    <nav class="nav" id="mainnav" aria-label="主题导航">
+      <a href="#overview">领域概览</a>
+      <a href="#picks">精选内容</a>
+      <a href="#latest">最新更新</a>
+      <a href="#channels">分类入口</a>
+      <a href="#deep">深度解析</a>
+      <a href="#guide">体验指南</a>
+      <a href="#faq">常见问题</a>
+      <a href="#voices">用户评论</a>
+    </nav>
+    <div class="headtools">
+      <div class="search">
+        <label for="q" style="position:absolute;left:-9999px">站内搜索</label>
+        <input id="q" type="search" placeholder="搜索条目、规则、话题" autocomplete="off" aria-describedby="sres">
+        <div class="sresult" id="sres" role="region" aria-live="polite"></div>
+      </div>
+      <a class="btn ghost" href="#guide">体验入口</a>
+      <button class="menubtn" id="menubtn" aria-expanded="false" aria-controls="mainnav" aria-label="展开或收起导航菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top" aria-labelledby="hero-h1">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker"><i></i>家庭变故 · 姐弟关系 · 法律与情绪</span>
+      <h1 id="hero-h1">海角社区 姐姐离婚</h1>
+      <p class="lede">姐姐离婚往往牵动一整个原生家庭。这里按时间线拆开财产分割、抚养权协商、姐弟沟通与长辈态度，收录可核对的调解记录、规则条文摘录和当事人自述，方便在事发的第一周就知道该问什么、该准备哪几份材料。</p>
+      <div class="cta">
+        <a class="btn" href="#deep">读深度解析</a>
+        <a class="btn ghost" href="#channels">按分类找内容</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>47</b><span>11月7日新增讨论</span></div>
+        <div class="stat"><b>12</b><span>分类频道</span></div>
+        <div class="stat"><b>9</b><span>可核对调解记录</span></div>
+        <div class="stat"><b>2026-11-08</b><span>内容核对日</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 460 340" role="img">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e2ece5"/><stop offset="1" stop-color="#f6e2d3"/>
+          </linearGradient>
+        </defs>
+        <rect x="14" y="20" width="432" height="300" rx="22" fill="url(#g1)"/>
+        <circle cx="352" cy="78" r="30" fill="#f2b880" opacity=".75"/>
+        <path d="M60 250c40-70 70-104 104-104s58 34 96 104" fill="none" stroke="#1f4d5c" stroke-width="10" stroke-linecap="round"/>
+        <circle cx="164" cy="126" r="26" fill="#1f4d5c"/>
+        <path d="M236 250c26-44 46-66 68-66s40 22 64 66" fill="none" stroke="#5c7d6e" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+        <circle cx="304" cy="170" r="17" fill="#5c7d6e" opacity=".9"/>
+        <rect x="64" y="270" width="150" height="26" rx="13" fill="#fff" opacity=".9"/>
+        <rect x="82" y="278" width="96" height="6" rx="3" fill="#c96f3b" opacity=".75"/>
+        <rect x="238" y="270" width="128" height="26" rx="13" fill="#fff" opacity=".9"/>
+        <rect x="256" y="278" width="72" height="6" rx="3" fill="#5c7d6e" opacity=".75"/>
+        <path d="M96 60h96M96 76h60" stroke="#1f4d5c" stroke-width="5" stroke-linecap="round" opacity=".35"/>
+      </svg>
+      <span class="artnote">原创造型：两条并行轨迹，一条是姐姐的新生活，一条是姐弟的重新靠近</span>
+    </div>
+  </div>
+</section>
+
+<div class="wrap layout" id="main">
+  <main class="maincol">
+
+    <!-- 1 领域概览 -->
+    <section class="sec" id="overview" aria-labelledby="overview-h">
+      <div class="sechead">
+        <h2 id="overview-h">领域概览：这件事涉及哪几层</h2>
+        <span class="sub">法律、经济、亲属关系、情绪四条线同时推进</span>
+      </div>
+      <p>姐姐离婚不是一个单点事件，而是四层事务叠在一起。第一层是法律程序：协议离婚的 30 天冷静期、诉讼离婚的两次开庭节奏，各地法院排期差异明显。第二层是财产：房产权属、婚后还贷部分、公积金与年终奖的归属，往往决定了姐弟之间是否会出现借款纠纷。第三层是亲属关系：父母的态度、弟弟妹妹是否被要求“站队”。第四层是情绪与生活重建，涉及搬家、孩子转学、家庭称谓调整。</p>
+      <div class="grid3">
+        <article class="card">
+          <h3>法律程序层</h3>
+          <p>协议离婚需双方到婚姻登记机关申请，冷静期 30 天；一方反悔则改走诉讼。诉讼一审通常 3—6 个月，涉及房产评估会延长。</p>
+          <span class="meta"><span class="tag sage">程序</span>更新 11-05</span>
+        </article>
+        <article class="card">
+          <h3>财产与债务层</h3>
+          <p>婚后共同还贷部分及其增值属于共同财产；一方婚前首付、婚后共同还贷的房产，补偿计算常按还贷额占购房成本比例乘以现值。</p>
+          <span class="meta"><span class="tag sage">财产</span>更新 11-06</span>
+        </article>
+        <article class="card">
+          <h3>亲属关系层</h3>
+          <p>弟弟妹妹常被卷入“借钱周转”“代持房产”“帮忙带孩子”。事先书面确认款项性质，比事后解释省力得多。</p>
+          <span class="meta"><span class="tag">关系</span>更新 11-04</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2 精选内容推荐 -->
+    <section class="sec" id="picks" aria-labelledby="picks-h">
+      <div class="sechead">
+        <h2 id="picks-h">精选内容推荐</h2>
+        <span class="sub">按阅读完成度与可核对信息量挑选</span>
+        <a class="more" href="#latest">全部更新 →</a>
+      </div>
+      <div class="grid2">
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/hjsq-jiehun-caichan/640/400" width="640" height="400" loading="lazy" alt="桌面摊开的房产证复印件与还贷流水单"></div>
+          <h3>婚后共同还贷补偿怎么算：一份 2026 年调解记录拆解</h3>
+          <p>房子登记在姐夫名下，姐姐婚后共同还贷 6 年 4 个月。调解记录里，评估价 218 万元、剩余贷款 63 万元，补偿款最终落在 27.6 万元。</p>
+          <span class="meta"><span class="tag">财产分割</span><span>11-06</span><span>阅读 4 分钟</span></span>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/hjsq-didi-goutong/720/450" width="720" height="450" loading="lazy" alt="两人在咖啡馆靠窗位置交谈，桌面放着笔记本"></div>
+          <h3>姐姐离婚后，弟弟该不该主动问细节</h3>
+          <p>评论区里 3 位当事人给出相反答案。共同点：先问“需要我做什么”，再问“发生了什么”，顺序反了容易变成审问。</p>
+          <span class="meta"><span class="tag sage">姐弟沟通</span><span>11-03</span><span>阅读 3 分钟</span></span>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/hjsq-fuyang-quan/680/420" width="680" height="420" loading="lazy" alt="孩子在书桌前写作业，旁边放着书包"></div>
+          <h3>孩子抚养权协商中的 5 个具体条款写法</h3>
+          <p>探视时间要写到“每月第几个周末、几点接、几点送”；教育医疗大额支出写清分摊比例与凭证要求，避免日后反复拉扯。</p>
+          <span class="meta"><span class="tag">子女抚养</span><span>11-02</span><span>阅读 5 分钟</span></span>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/hjsq-fumu-taodu/660/410" width="660" height="410" loading="lazy" alt="两位老人在客厅沙发上翻看相册"></div>
+          <h3>父母劝“再忍忍”时，家里发生了什么</h3>
+          <p>10 月 28 日一条高赞自述提到：母亲劝和、父亲沉默、弟弟被要求传话。传话角色最容易把矛盾放大成家族对立。</p>
+          <span class="meta"><span class="tag line">长辈态度</span><span>10-30</span><span>阅读 4 分钟</span></span>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="sec" id="latest" aria-labelledby="latest-h">
+      <div class="sechead">
+        <h2 id="latest-h">最新更新</h2>
+        <span class="sub">2026-10-09 至 2026-11-08</span>
+      </div>
+      <ul class="clist">
+        <li><span class="num">11-07</span><span class="t">新增讨论「姐姐离婚后户口迁回娘家，需要哪些材料」<small>涉及迁入地同意、房产证明、原户籍地迁出证明三份</small></span><span class="d">讨论 47</span></li>
+        <li><span class="num">11-06</span><span class="t">补入 3 份财产分割调解记录摘要<small>含共同还贷补偿、车辆折价、存款查证三条</small></span><span class="d">文档</span></li>
+        <li><span class="num">11-05</span><span class="t">更新「离婚冷静期内一方撤回申请」流程图<small>依据 2026 年 9 月婚姻登记办理口径整理</small></span><span class="d">图解</span></li>
+        <li><span class="num">11-02</span><span class="t">访谈整理：姐姐离婚后第 3 个月，弟弟做了什么<small>两位受访者，一位选择代持车位，一位选择不介入</small></span><span class="d">访谈</span></li>
+        <li><span class="num">10-29</span><span class="t">新增「抚养费支付记录模板」<small>含转账备注写法、年度对账表</small></span><span class="d">工具</span></li>
+        <li><span class="num">10-22</span><span class="t">话题页上线：姐弟之间的借款要不要打借条<small>收录 12 条当事人经验，观点分歧明显</small></span><span class="d">话题</span></li>
+        <li><span class="num">10-15</span><span class="t">整理「离婚后家庭称谓调整」清单<small>涵盖孩子叫法、亲戚称呼、节日走动安排</small></span><span class="d">清单</span></li>
+      </ul>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="sec" id="channels" aria-labelledby="channels-h">
+      <div class="sechead">
+        <h2 id="channels-h">分类入口</h2>
+        <span class="sub">12 个频道，按事情发生的先后排列</span>
+      </div>
+      <div class="indexgrid">
+        <a class="idx" href="/#deep"><b>财产分割</b><span>房产、存款、债务</span></a>
+        <a class="idx" href="/#deep"><b>子女抚养权</b><span>条款写法与探视</span></a>
+        <a class="idx" href="/#guide"><b>离婚冷静期</b><span>撤回与转诉讼</span></a>
+        <a class="idx" href="/#voices"><b>姐弟沟通</b><span>问什么、不问什么</span></a>
+        <a class="idx" href="/#faq"><b>父母态度</b><span>劝和与站队</span></a>
+        <a class="idx" href="/#overview"><b>户口迁移</b><span>材料与流程</span></a>
+        <a class="idx" href="/#picks"><b>借款与代持</b><span>借条与书面确认</span></a>
+        <a class="idx" href="/#latest"><b>搬家与转学</b><span>租房、学籍衔接</span></a>
+        <a class="idx" href="/#faq"><b>抚养费支付</b><span>比例与对账</span></a>
+        <a class="idx" href="/#deep"><b>调解与诉讼</b><span>开庭节奏</span></a>
+        <a class="idx" href="/#voices"><b>情绪互助</b><span>当事人自述</span></a>
+        <a class="idx" href="/#guide"><b>家庭称谓</b><span>孩子怎么叫</span></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="sec" id="deep" aria-labelledby="deep-h">
+      <div class="deep">
+        <h2 id="deep-h">深度解析：弟弟的介入方式，决定这件事的走向</h2>
+        <div class="byline">编辑：海角社区家庭组 · 核对日期 2026-11-08 · 依据 3 份调解记录、2 段访谈、1 份法院公开裁判文书摘要</div>
+
+        <p>一个可以直接被反驳的判断：<strong>姐姐离婚期间，弟弟最该做的不是“帮着出头”，而是“帮着把事实摆齐”。</strong>出头能解一时之气，摆事实才能让财产分割、抚养安排少返工。2026 年 10 月 22 日收录的 12 条当事人经验里，有 7 条后悔“当时话说太满”，只有 2 条后悔“当时没多问一句”。</p>
+
+        <h3>可核对的分歧：两种介入姿态，结局差在哪</h3>
+        <p>两条案例来自同一城市的两位弟弟，时间都在 2026 年 9 月。对比不是为了评优劣，而是让判断有落点。</p>
+        <div class="cmp">
+          <div class="h l">A：代持并垫资</div>
+          <div class="h r">B：只做记录与陪同</div>
+          <ul class="l">
+            <li>10 月 2 日垫付律师费 1.8 万元，未写借条</li>
+            <li>以其名义代持车位，登记价 12 万元</li>
+            <li>离婚协议签完后，姐姐认为该款属“娘家支持”</li>
+            <li>11 月 4 日姐弟为 1.8 万元性质争执</li>
+          </ul>
+          <ul class="r">
+            <li>每次协商后整理 1 页要点，发家庭群确认</li>
+            <li>陪同去婚姻登记机关 2 次，未参与金额讨论</li>
+            <li>姐姐与姐夫就还贷补偿达成 27.6 万元</li>
+            <li>11 月 6 日姐弟仍正常来往，无款项争议</li>
+          </ul>
+        </div>
+        <p>A 的问题不在于出钱，而在于出钱时没说清是借款、赠与还是代垫。民法典婚姻家庭编的司法解释对夫妻共同债务有明确边界，但对“姐弟之间”的款项性质没有特别规定，落到实务里就是谁主张谁举证。B 的做法看似冷淡，却把每一次协商固化成可查的文字记录，反而降低了后续扯皮的概率。</p>
+
+        <h3>规则前后变化：冷静期与撤回</h3>
+        <p>2026 年 9 月起，本地婚姻登记机关对冷静期撤回的办理口径有一处细节变化：撤回申请需双方共同到场，单方撤回不予受理。此前部分窗口接受单方书面撤回，导致同一对夫妻在不同窗口得到不同答复。10 月 15 日之后办理的 3 起案例里，2 起转为诉讼，1 起在第二次申请时完成登记。</p>
+        <ul class="timeline">
+          <li><b>2026-09-12</b><span>窗口口径调整，撤回须双方到场，登记员口头告知并留档。</span></li>
+          <li><b>2026-10-08</b><span>一对夫妻因单方撤回被拒，改走诉讼，一审排期到 12 月中旬。</span></li>
+          <li><b>2026-11-05</b><span>流程图更新，标注“撤回需共同到场”与材料清单。</span></li>
+        </ul>
+
+        <h3>说法差异：父母劝和，姐弟传话</h3>
+        <p>10 月 28 日一条自述里，母亲的原话是“过日子哪有不磕碰的”，父亲全程没表态，弟弟被要求“去问问到底怎么回事”。三天后，姐夫认为弟弟是来“施压”，协商中断一次。这里的差异值得记录：父母以为在缓和，当事人接收到的是逼问，传话者成了矛盾焦点。</p>
+        <blockquote>“我妈让我去问，我就去了。回来我说姐夫态度还行，我妈说我不向着家里。从那以后我就不传话了。”<cite>——10 月 28 日自述，受访者为当事人的弟弟，28 岁</cite></blockquote>
+        <p>可操作的做法是把“传话”换成“同步”：把协商要点写成一页，同时发给姐姐和父母，谁有异议在群里说，不经过第三人转述。信息层因此统一，情绪也少一层过滤。</p>
+
+        <h3>需要标注为推测的部分</h3>
+        <p>有讨论认为“弟弟出面谈，姐夫更容易让步”。目前没有可核对的数据支持这一点，只能算推测；已有的 3 份调解记录里，弟弟在场的 2 起协商时长平均多出 40 分钟，但补偿金额与无弟弟在场的 1 起差异不显著。样本太小，不足以支撑结论。</p>
+
+        <div class="verdict"><strong>结论（可反驳）：</strong>姐姐离婚期间，弟弟的最高价值是“记录员 + 陪跑者”，不是谈判代表。若一定要出钱，当天写清款项性质与还款方式；若一定要传话，改成书面同步。反驳这条判断的证据可以是：当姐姐处于明显弱势、缺乏表达能力时，弟弟的适度介入确实能改变协商结果——这类案例目前收录 1 起，尚待补充。</div>
+      </div>
+    </section>
+
+    <!-- 6 体验指南 -->
+    <section class="sec" id="guide" aria-labelledby="guide-h">
+      <div class="sechead">
+        <h2 id="guide-h">体验指南：事发第一周可以做的事</h2>
+        <span class="sub">按天排，不按情绪排</span>
+      </div>
+      <ol class="steps">
+        <li><b>第 1 天：只收集，不表态。</b>把结婚证、房产证、近 2 年还贷流水、孩子出生证明拍照归档，文件名写日期与用途，避免临时翻找。</li>
+        <li><b>第 2 天：确认走哪条程序。</b>双方能谈拢就走协议离婚，去婚姻登记机关申请；谈不拢就准备诉讼材料，先咨询当地法院立案窗口的排期。</li>
+        <li><b>第 3 天：把财产列成两栏。</b>一栏写登记在谁名下，一栏写谁在还贷、谁在出资。两栏不一致的地方，就是后续争议点。</li>
+        <li><b>第 4 天：孩子的事单独开会。</b>探视时间、接送人、寒暑假安排、教育医疗大额支出分摊，逐条写下来，双方各自确认。</li>
+        <li><b>第 5 天：处理亲属沟通。</b>由姐姐指定一个人对外统一口径，其他人不单独向姐夫或对方家庭传话。</li>
+        <li><b>第 7 天：留一份时间线。</b>把这一周发生的协商、约定、拒绝都记上日期。日后无论调解还是开庭，这份时间线比回忆可靠。</li>
+      </ol>
+      <p style="margin-top:14px;font-size:14.5px;color:var(--ink-soft)">涉及金额的约定，尽量当天落成文字：谁出、出多少、性质是借款还是赠与、什么时候还。微信文字也算记录，但把“借款”两个字写出来，比转账备注写“先用着”有用。</p>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="sec faq" id="faq" aria-labelledby="faq-h">
+      <div class="sechead">
+        <h2 id="faq-h">常见问题</h2>
+        <span class="sub">答案主语是事情本身，不是站点</span>
+      </div>
+      <details>
+        <summary>协议离婚的冷静期是多久，期间一方反悔怎么办？</summary>
+        <div class="ans">自婚姻登记机关收到申请之日起 30 天。期间任何一方不愿离婚，可撤回申请；2026 年 9 月起本地窗口要求双方共同到场办理撤回，单方书面撤回不予受理。撤回后仍要离婚的，需重新申请或改走诉讼。</div>
+      </details>
+      <details>
+        <summary>房子登记在姐夫名下，姐姐婚后一起还贷，能分到多少？</summary>
+        <div class="ans">共同还贷部分及其对应增值属于共同财产。常见算法是：共同还贷额 ÷ 购房总成本 × 房屋现值 ÷ 2。以 11 月 6 日一份调解记录为例，评估价 218 万元、剩余贷款 63 万元、共同还贷 6 年 4 个月，补偿款最终为 27.6 万元。具体比例仍受首付来源、装修出资影响。</div>
+      </details>
+      <details>
+        <summary>姐姐离婚后户口迁回娘家，需要准备哪些材料？</summary>
+        <div class="ans">通常需要迁入地户主同意书、房产证明、原户籍地迁出证明、身份证与离婚证。11 月 7 日新增讨论里，有人因娘家房产登记在父亲名下、户主未到场而多跑一趟。提前问清迁入地派出所的受理时间，能省半天。</div>
+      </details>
+      <details>
+        <summary>弟弟借钱给姐姐打离婚官司，要不要写借条？</summary>
+        <div class="ans">要写。写明出借人、金额、用途、还款时间与方式，转账备注同步写“借款”。没有书面约定时，日后主张返还的一方需要举证款项性质，难度明显更高。10 月 22 日话题页收录的 12 条经验里，未写借条的 4 起中有 3 起发生争执。</div>
+      </details>
+      <details>
+        <summary>孩子抚养权归姐姐，探视条款怎么写才不容易吵？</summary>
+        <div class="ans">写到可执行：每月第几个周末、几点接、几点送回、谁负责接送、寒暑假如何分配、临时变更提前几天通知。教育医疗大额支出写清分摊比例和凭证要求。条款越具体，执行时的解释空间越小。</div>
+      </details>
+      <details>
+        <summary>父母一直劝和，姐弟该怎么回应？</summary>
+        <div class="ans">把“劝和”与“知情”分开处理：告诉父母已知的事实和已做的安排，不要求他们表态支持谁。若父母坚持让姐弟去传话，可以改为把协商要点发到家庭群，让信息同时到达，减少转述失真。</div>
+      </details>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="sec" id="voices" aria-labelledby="voices-h">
+      <div class="sechead">
+        <h2 id="voices-h">用户评论</h2>
+        <span class="sub">含中性意见与不同立场</span>
+      </div>
+      <div class="cmts">
+        <article class="cmt">
+          <div class="u"><span class="av">林</span><span>林小满 · 11-07 21:14</span></div>
+          <p>那份 27.6 万元的调解记录我对照过，还贷额和评估价能对上，但没写装修出资谁出的。我们家当初装修是我出的 8 万元，这种没凭证的部分最麻烦。</p>
+        </article>
+        <article class="cmt">
+          <div class="u"><span class="av b">周</span><span>周三多 · 11-07 18:40</span></div>
+          <p>不认同“弟弟只做记录员”。我姐当时被对方家里人围着说，我要是不在场，她连话都插不上。介入程度看具体情况，别一刀切。</p>
+        </article>
+        <article class="cmt">
+          <div class="u"><span class="av c">阿</span><span>阿岚 · 11-06 09:02</span></div>
+          <p>冷静期撤回要双方到场这条，我 10 月 8 日去办就遇到了，窗口的人说单方撤回不受理。后来改诉讼，一审排到 12 月中旬，时间成本比想象中大。</p>
+        </article>
+        <article class="cmt">
+          <div class="u"><span class="av">老</span><span>老陈 · 11-05 22:31</span></div>
+          <p>我是那个被要求传话的弟弟。传了三次，我妈嫌我不向着家里，我姐夫觉得我在施压。后来改成群里发要点，两边都安静了。这办法确实有用。</p>
+        </article>
+        <article class="cmt">
+          <div class="u"><span class="av b">糖</span><span>糖不甜 · 11-04 14:20</span></div>
+          <p>体验指南第 3 天那个两栏表挺实用，但漏了公积金和年终奖。我姐夫的公积金账户里有 11 万元，这块不提很容易被忽略。</p>
+        </article>
+        <article class="cmt">
+          <div class="u"><span class="av c">许</span><span>许工 · 11-03 08:47</span></div>
+          <p>文章说“样本太小不足以支撑结论”，这句我信。我们小区群里传的“弟弟出面对方就让步”，问了三个当事人，两个说没这回事，一个说只是碰巧。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="sec" id="news" aria-labelledby="news-h">
+      <div class="sechead">
+        <h2 id="news-h">相关资讯</h2>
+        <span class="sub">不同信源，分别标注</span>
+      </div>
+      <div class="grid2">
+        <article class="card">
+          <h3>婚姻登记机关：冷静期撤回须双方到场</h3>
+          <p>10 月中旬起，本地窗口对撤回申请统一要求双方共同到场并签字留档。此前单方书面撤回的做法停止使用。</p>
+          <span class="meta"><span class="tag line">官方口径</span><span>10-16</span></span>
+        </article>
+        <article class="card">
+          <h3>法院公开文书：共同还贷补偿计算分歧仍存</h3>
+          <p>同一城市两起案件中，评估基准日选取不同，补偿金额相差 3.1 万元。文书摘要已收入财产分割频道。</p>
+          <span class="meta"><span class="tag line">裁判文书</span><span>10-24</span></span>
+        </article>
+        <article class="card">
+          <h3>社区访谈：两位弟弟的两种选择</h3>
+          <p>一位垫付律师费未写借条，一位只做记录与陪同。三个月后，前者出现款项争议，后者姐弟正常来往。</p>
+          <span class="meta"><span class="tag">访谈</span><span>11-02</span></span>
+        </article>
+        <article class="card">
+          <h3>话题讨论：姐弟借款要不要打借条</h3>
+          <p>12 条当事人经验里，9 条主张写借条，3 条认为“一家人没必要”。主张不写的 3 条中，2 条后来发生争执。</p>
+          <span class="meta"><span class="tag">讨论</span><span>10-22</span></span>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="sec" id="related" aria-labelledby="related-h">
+      <div class="sechead">
+        <h2 id="related-h">相关推荐</h2>
+        <span class="sub">按读者常搜的具体词组织</span>
+      </div>
+      <div class="tagcloud">
+        <a href="/#deep">婚后共同还贷补偿</a>
+        <a href="/#faq">离婚冷静期撤回</a>
+        <a href="/#faq">抚养费支付记录</a>
+        <a href="/#faq">孩子探视条款</a>
+        <a href="/#guide">离婚后户口迁回娘家</a>
+        <a href="/#deep">姐弟借款借条</a>
+        <a href="/#guide">房产代持风险</a>
+        <a href="/#voices">父母劝和怎么回应</a>
+        <a href="/#overview">离婚后家庭称谓</a>
+        <a href="/#guide">孩子转学学籍衔接</a>
+        <a href="/#deep">调解记录怎么写</a>
+        <a href="/#latest">搬家租房清单</a>
+      </div>
+    </section>
+
+    <!-- 11 榜单 / 时间线 -->
+    <section class="sec" id="rank" aria-labelledby="rank-h">
+      <div class="sechead">
+        <h2 id="rank-h">本周关注榜与时间线</h2>
+        <span class="sub">按 10-09 至 11-08 的阅读与收藏综合排序</span>
+      </div>
+      <div class="grid2">
+        <div>
+          <ul class="clist">
+            <li><span class="num">01</span><span class="t">婚后共同还贷补偿怎么算<small>调解记录拆解，收藏 386</small></span><span class="d">财产</span></li>
+            <li><span class="num">02</span><span class="t">冷静期撤回须双方到场<small>窗口口径变化，收藏 291</small></span><span class="d">程序</span></li>
+            <li><span class="num">03</span><span class="t">弟弟该不该主动问细节<small>评论区观点分歧，收藏 244</small></span><span class="d">关系</span></li>
+            <li><span class="num">04</span><span class="t">户口迁回娘家材料清单<small>11-07 新增，收藏 187</small></span><span class="d">流程</span></li>
+            <li><span class="num">05</span><span class="t">抚养费支付记录模板<small>含年度对账表，收藏 162</small></span><span class="d">工具</span></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="timeline">
+            <li><b>2026-10-09</b><span>「姐弟借款要不要打借条」话题开帖，首日 31 条回复。</span></li>
+            <li><b>2026-10-16</b><span>婚姻登记窗口口径调整，撤回须双方到场。</span></li>
+            <li><b>2026-10-24</b><span>两起共同还贷案件文书摘要入库，补偿差额 3.1 万元。</span></li>
+            <li><b>2026-11-02</b><span>两位弟弟访谈上线，介入方式对比。</span></li>
+            <li><b>2026-11-07</b><span>户口迁移讨论新增 47 条，补入 3 份调解记录。</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 侧栏 -->
+  <aside class="sidecol" aria-label="侧栏导航与辅助信息">
+    <div class="sidecard">
+      <h2>本页导航</h2>
+      <ul class="sidemenu" id="sidemenu">
+        <li><a href="/#overview">领域概览</a></li>
+        <li><a href="/#picks">精选内容推荐</a></li>
+        <li><a href="/#latest">最新更新</a></li>
+        <li><a href="/#channels">分类入口</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#voices">用户评论</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#related">相关推荐</a></li>
+        <li><a href="/#rank">关注榜与时间线</a></li>
+      </ul>
+    </div>
+    <div class="sidecard">
+      <h2>高频条目</h2>
+      <ul class="mini" style="list-style:none;padding:0;margin:0">
+        <li><a href="/#faq">冷静期 30 天怎么算</a></li>
+        <li><a href="/#faq">还贷补偿比例公式</a></li>
+        <li><a href="/#faq">探视条款写法</a></li>
+        <li><a href="/#guide">借款书面确认三要素</a></li>
+        <li><a href="/#voices">父母劝和的应对话术</a></li>
+      </ul>
+      <p class="side-fact">条目数据为示例整理，涉及金额与日期已按 2026-11-08 核对；具体案件请以实际材料与经办机构答复为准。</p>
+    </div>
+    <div class="sidecard">
+      <h2>参与方式</h2>
+      <p>有可核对的调解记录、窗口答复或当事人自述，可在对应频道下提交，注明时间、地点与材料类型。涉及未成年人信息的内容会先做脱敏处理。</p>
+      <p style="margin-bottom:0"><a href="/#latest">查看最近收录 →</a></p>
+    </div>
+  </aside>
+</div>
+
+<!-- 页尾 -->
+<footer class="sitefoot" id="foot">
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <div class="footbrand">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#2e5965"/>
+            <path d="M13 45c8-15 14-22 20-22s10 7 18 22" fill="none" stroke="#f2b880" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="32" cy="23" r="5.5" fill="#f2b880"/>
+            <path d="M10 51h44" stroke="#7fa6ae" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <b>海角社区</b>
+        </div>
+        <p class="footpitch">把家庭变故拆成可核对的事实、可执行的步骤，让当事人在第一周就有方向。</p>
+      </div>
+      <div>
+        <h2>事务频道</h2>
+        <ul>
+          <li><a href="/#deep">财产分割</a></li>
+          <li><a href="/#deep">子女抚养权</a></li>
+          <li><a href="/#guide">离婚冷静期</a></li>
+          <li><a href="/#faq">抚养费支付</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>关系频道</h2>
+        <ul>
+          <li><a href="/#voices">姐弟沟通</a></li>
+          <li><a href="/#faq">父母态度</a></li>
+          <li><a href="/#guide">家庭称谓</a></li>
+          <li><a href="/#voices">情绪互助</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>工具与说明</h2>
+        <ul>
+          <li><a href="/#latest">更新记录</a></li>
+          <li><a href="/#rank">本周关注榜</a></li>
+          <li><a href="/#related">相关推荐标签</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footnote">
+      <span>页面内容含示例条目与示例数据，用于说明处理思路，不构成法律意见。</span>
+      <span>内容核对与页脚更新时间：2026-11-08，对应正文新增讨论、调解记录摘要与流程图更新项。</span>
+      <span>© 2026 海角社区 · 保留所有权利</span>
+    </div>
+  </div>
+</footer>
+
+<button id="totop" aria-label="回到页面顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动菜单 */
+  var btn = document.getElementById('menubtn');
+  var nav = document.getElementById('mainnav');
+  if(btn && nav){
+    btn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.matchMedia('(max-width:860px)').matches){
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && nav.classList.contains('open')){
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+        btn.focus();
+      }
+    });
+  }
+
+  /* 搜索：本地查找 */
+  var input = document.getElementById('q');
+  var box = document.getElementById('sres');
+  var items = [];
+  document.querySelectorAll('main h2, main h3, main .clist .t, main .idx b, main .tagcloud a, main .faq summary').forEach(function(el){
+    var text = (el.textContent || '').replace(/\s+/g,' ').trim();
+    if(!text) return;
+    var target = el.closest('section');
+    items.push({t:text, id: target ? target.id : 'main'});
+  });
+  var seen = {};
+  items = items.filter(function(it){
+    var k = it.id + '|' + it.t;
+    if(seen[k]) return false;
+    seen[k] = 1;
+    return true;
+  });
+
+  function render(list, q){
+    if(!list.length){
+      box.innerHTML = '<div class="none">没有找到与「' + q.replace(/[<>&]/g,'') + '」相关的内容。试试“还贷”“冷静期”“探视”“户口”。</div>';
+      return;
+    }
+    box.innerHTML = list.map(function(it){
+      return '<a href="/#' + it.id + '">' + it.t + '</a>';
+    }).join('');
+  }
+
+  if(input && box){
+    input.addEventListener('input', function(){
+      var q = input.value.trim();
+      if(!q){ box.classList.remove('open'); box.innerHTML=''; return; }
+      var list = items.filter(function(it){ return it.t.indexOf(q) !== -1; }).slice(0,10);
+      render(list, q);
+      box.classList.add('open');
+    });
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){
+        var first = box.querySelector('a');
+        if(first) window.location.href = first.getAttribute('href');
+      }
+      if(e.key === 'Escape'){ box.classList.remove('open'); }
+    });
+    document.addEventListener('click', function(e){
+      if(!e.target.closest('.search')) box.classList.remove('open');
+    });
+  }
+
+  /* 滚动高亮侧栏导航 */
+  var links = Array.prototype.slice.call(document.querySelectorAll('#sidemenu a'));
+  var targets = links.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  function highlight(){
+    var pos = window.scrollY + 140;
+    var current = null;
+    targets.forEach(function(t){
+      if(t.offsetTop <= pos) current = t;
+    });
+    links.forEach(function(a){
+      a.classList.toggle('active', current && a.getAttribute('href').replace('/#','') === current.id);
+    });
+  }
+  if(targets.length){
+    window.addEventListener('scroll', highlight, {passive:true});
+    highlight();
+  }
+
+  /* 回到顶部 */
+  var top = document.getElementById('totop');
+  if(top){
+    window.addEventListener('scroll', function(){
+      top.classList.toggle('show', window.scrollY > 620);
+    }, {passive:true});
+    top.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior: matchMedia('(prefers-reduced-motion:reduce)').matches ? 'auto' : 'smooth'});
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "海角社区",
+  "alternateName": "海角社区 姐姐离婚专题",
+  "description": "围绕姐姐离婚与家庭变故的讨论社区，收录财产分割、子女抚养、姐弟沟通与父母态度的可核对条目。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "协议离婚的冷静期是多久，期间一方反悔怎么办？",
+      "acceptedAnswer": {"@type": "Answer", "text": "自婚姻登记机关收到申请之日起 30 天。期间任何一方不愿离婚可撤回申请；2026 年 9 月起本地窗口要求双方共同到场办理撤回，单方书面撤回不予受理。撤回后仍要离婚的，需重新申请或改走诉讼。"}
+    },
+    {
+      "@type": "Question",
+      "name": "房子登记在姐夫名下，姐姐婚后一起还贷，能分到多少？",
+      "acceptedAnswer": {"@type": "Answer", "text": "共同还贷部分及其对应增值属于共同财产。常见算法是共同还贷额除以购房总成本乘以房屋现值再除以 2。11 月 6 日一份调解记录中评估价 218 万元、剩余贷款 63 万元、共同还贷 6 年 4 个月，补偿款为 27.6 万元。具体比例还受首付来源与装修出资影响。"}
+    },
+    {
+      "@type": "Question",
+      "name": "姐姐离婚后户口迁回娘家，需要准备哪些材料？",
+      "acceptedAnswer": {"@type": "Answer", "text": "通常需要迁入地户主同意书、房产证明、原户籍地迁出证明、身份证与离婚证。若娘家房产登记在父亲名下且户主未到场，可能需要补交材料。"}
+    },
+    {
+      "@type": "Question",
+      "name": "弟弟借钱给姐姐打离婚官司，要不要写借条？",
+      "acceptedAnswer": {"@type": "Answer", "text": "要写。写明出借人、金额、用途、还款时间与方式，转账备注同步写借款。没有书面约定时，主张返还的一方需要举证款项性质，难度更高。"}
+    },
+    {
+      "@type": "Question",
+      "name": "孩子抚养权归姐姐，探视条款怎么写才不容易吵？",
+      "acceptedAnswer": {"@type": "Answer", "text": "写到可执行：每月第几个周末、几点接、几点送回、谁负责接送、寒暑假如何分配、临时变更提前几天通知。教育医疗大额支出写清分摊比例与凭证要求。"}
+    },
+    {
+      "@type": "Question",
+      "name": "父母一直劝和，姐弟该怎么回应？",
+      "acceptedAnswer": {"@type": "Answer", "text": "把劝和与知情分开处理，告知父母已知事实与已做安排，不要求他们表态支持谁。若被要求传话，可改为把协商要点发到家庭群，让信息同时到达。"}
+    }
+  ]
+}
+</script>
+</body>
+            </html>
